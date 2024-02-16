@@ -23,9 +23,8 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" />
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/app.css" />
-        <link rel="stylesheet" href="/css/cart.css" />
-        {/* <link rel="stylesheet" href="/css/product.css" />
-        <link rel="stylesheet" href="/css/elementor.css" /> */}
+        <link rel="stylesheet" href="/css/product.css" />
+        {/*   <link rel="stylesheet" href="/css/elementor.css" /> */}
       </head>
       <body className="home page-template page-template-templates page-template-page-builder-content page-template-templatespage-builder-content-php page page-id-105 wp-custom-logo theme-phlox woocommerce-no-js elementor-default elementor-kit-69 elementor-page elementor-page-105 phlox aux-full-width aux-resp aux-s-fhd aux-top-sticky aux-page-animation-off _auxels">
         <div id="inner-body">
