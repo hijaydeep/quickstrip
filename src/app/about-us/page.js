@@ -1,5 +1,9 @@
-import Link from 'next/link';
 import React from 'react';
+import Link from 'next/link';
+
+export const metadata = {
+    title: "About Us - QuickStrip Dental",
+};
 
 const page = () => {
 

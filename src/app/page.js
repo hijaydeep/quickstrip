@@ -2,6 +2,10 @@ import React from 'react';
 import Banner from '@/components/Banner';
 import Card from '@/components/Card';
 
+export const metadata = {
+  title: "QuickStrip Dental - Your Daily Health Transformed",
+};
+
 const page = () => {
 
   return (

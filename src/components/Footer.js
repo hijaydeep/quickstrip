@@ -32,11 +32,23 @@ const Footer = () => {
                                                         <div className="aux-widget-icon-list-inner">
                                                             <ul className="aux-icon-list-items aux-direction-horizontal">
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-0d584e4 elementor-repeater-item-0d584e4">
-                                                                    <a className="aux-icon-list-link" href="https://www.facebook.com/quickstriplife/" target="_blank"><span className="aux-icon-list-icon auxicon-facebook" /><span className="aux-list-connector" /></a></li>
+                                                                    <a className="aux-icon-list-link" href="https://www.facebook.com/quickstriplife/" target="_blank">
+                                                                        <span className="aux-icon-list-icon auxicon-facebook" />
+                                                                        <span className="aux-list-connector" />
+                                                                    </a>
+                                                                </li>
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-ad5a2db elementor-repeater-item-ad5a2db">
-                                                                    <a className="aux-icon-list-link" href="https://twitter.com/Quickstrip_life" target="_blank"><span className="aux-icon-list-icon auxicon-twitter" /><span className="aux-list-connector" /></a></li>
+                                                                    <a className="aux-icon-list-link" href="https://twitter.com/Quickstrip_life" target="_blank">
+                                                                        <span className="aux-icon-list-icon auxicon-twitter" />
+                                                                        <span className="aux-list-connector" />
+                                                                    </a>
+                                                                </li>
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-7af8636 elementor-repeater-item-7af8636">
-                                                                    <a className="aux-icon-list-link" href="https://www.instagram.com/quickstrip_life/" target="_blank"><span className="aux-icon-list-icon auxicon-instagram" /><span className="aux-list-connector" /></a></li>
+                                                                    <a className="aux-icon-list-link" href="https://www.instagram.com/quickstrip_life/" target="_blank">
+                                                                        <span className="aux-icon-list-icon auxicon-instagram" />
+                                                                        <span className="aux-list-connector" />
+                                                                    </a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </div>

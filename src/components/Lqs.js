@@ -3,15 +3,20 @@ import React, { useState } from 'react';
 
 const Lqs = () => {
 
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const totalSlides = 4;
+    const imagePaths = [
+        '/img/lqs.png',
+        '/img/Lidocaine-Video-Thumbnail.png'
+    ];
 
-    const handleNextSlide = () => {
-        setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
+    const [activeImage, setActiveImage] = useState(imagePaths[0]);
+    const [activeTab, setActiveTab] = useState('1');
+
+    const handleImageClick = (path) => {
+        setActiveImage(path);
     };
 
-    const handlePrevSlide = () => {
-        setCurrentSlide((prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides);
+    const handleTabClick = (tabId) => {
+        setActiveTab(tabId);
     };
 
     return (
@@ -27,50 +32,68 @@ const Lqs = () => {
                                         <div className="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns={4} style={{ opacity: 1, transition: 'opacity .25s ease-in-out' }}>
                                             <div className="flex-viewport" style={{ overflow: 'hidden', position: 'relative', height: '640px' }}>
                                                 <div className="woocommerce-product-gallery__wrapper" style={{ width: '800%', transitionDuration: '0s', transform: 'translate3d(0px, 0px, 0px)' }}>
-                                                    <div data-thumb="/img/xylitol.png" data-thumb-alt="Xylistrip" className="woocommerce-product-gallery__image" style={{ width: '640px', marginRight: '0px', float: 'left', display: 'block' }}>
-                                                        <img width={600} height={600} src="/img/xylitol.png" className="wp-post-image" alt="Xylistrip" title="Quickstrip Xylistrip" data-caption data-src="https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product.webp" data-large_image="https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product.webp" data-large_image_width={600} data-large_image_height={600} decoding="async" srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product.webp 600w, https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product-300x300.webp 300w, https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product-150x150.webp 150w, https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product-200x200.webp 200w, https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product-100x100.webp 100w, https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product-90x90.webp 90w" sizes="(max-width: 600px) 100vw, 600px" />
-                                                        <span className="wpcpv-item wpcpv-item-image" data-src="https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product.webp">
-                                                            <img width="600" height="600" src="/img/xylitol.png" alt="" />
-                                                        </span>
+                                                    <div className="woocommerce-product-gallery__image" style={{ width: '640px', marginRight: '0px', float: 'left', display: 'block' }}>
+                                                        {activeImage === '/img/lqs.png' && (
+                                                            <>
+                                                                <img
+                                                                    width={600}
+                                                                    height={600}
+                                                                    src="/img/lqs.png"
+                                                                    className="wp-post-image"
+                                                                    alt="Xylistrip"
+                                                                    title="Quickstrip Xylistrip"
+                                                                />
+                                                                <span className="wpcpv-item wpcpv-item-image">
+                                                                    <img width="600" height="600" src="/img/lqs.png" alt="" />
+                                                                </span>
+                                                            </>
+                                                        )}
                                                     </div>
-                                                    {/* <div data-thumb="https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-fron-100x100.webp" data-thumb-alt="xylitol-front" className="woocommerce-product-gallery__image" style={{ width: '640px', marginRight: '0px', float: 'left', display: 'block' }}>
-                                                <img width={600} height={600} src="/img/xylitol-front.png" className alt="xylitol-front" title="xylitol-front" data-caption data-src="https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-fron.webp" data-large_image="https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-fron.webp" data-large_image_width={600} data-large_image_height={600} decoding="async" srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-fron.webp 600w, https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-fron-300x300.webp 300w, https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-fron-150x150.webp 150w, https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-fron-200x200.webp 200w, https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-fron-100x100.webp 100w, https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-fron-90x90.webp 90w" sizes="(max-width: 600px) 100vw, 600px" />
-                                                <span className="wpcpv-item wpcpv-item-image" data-src="https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-fron.webp">
-                                                    <img width="600" height="600" src="/img/xylitol-front.png" alt="" />
-                                                </span>
-                                            </div>
-                                            <div data-thumb="https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-back-100x100.webp" data-thumb-alt="xylitol-back" className="woocommerce-product-gallery__image" style={{ width: '640px', marginRight: '0px', float: 'left', display: 'block' }}>
-                                                <img width={600} height={600} src="/img/xylitol-back.png" className alt="xylitol-back" title="xylitol-back" data-caption data-src="https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-back.webp" data-large_image="https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-back.webp" data-large_image_width={600} data-large_image_height={600} decoding="async" srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-back.webp 600w, https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-back-300x300.webp 300w, https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-back-150x150.webp 150w, https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-back-200x200.webp 200w, https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-back-100x100.webp 100w, https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-back-90x90.webp 90w" sizes="(max-width: 600px) 100vw, 600px" />
-                                                <span className="wpcpv-item wpcpv-item-image" data-src="https://quickstripdental.com/wp-content/uploads/2022/10/xylitol-back.webp">
-                                                    <img width="600" height="600" src="/img/xylitol-back.png" alt="" />
-                                                </span>
-                                            </div>
-                                            <div data-thumb="https://quickstripdental.com/wp-content/uploads/2022/10/Xylitol-Video-Thumbnail-100x100.webp" data-thumb-alt className="woocommerce-product-gallery__image" style={{ width: '640px', marginRight: '0px', float: 'left', display: 'block' }}>
-                                                <img width={600} height={400} src="/img/Xylitol-Video-Thumbnail.png" className alt="" title="Xylitol Video Thumbnail" data-caption data-src="https://quickstripdental.com/wp-content/uploads/2022/10/Xylitol-Video-Thumbnail.webp" data-large_image="https://quickstripdental.com/wp-content/uploads/2022/10/Xylitol-Video-Thumbnail.webp" data-large_image_width={899} data-large_image_height={600} decoding="async" srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/Xylitol-Video-Thumbnail-600x400.webp 600w, https://quickstripdental.com/wp-content/uploads/2022/10/Xylitol-Video-Thumbnail-135x90.webp 135w, https://quickstripdental.com/wp-content/uploads/2022/10/Xylitol-Video-Thumbnail.webp 899w" sizes="(max-width: 600px) 100vw, 600px" />
-                                                <span className="wpcpv-item wpcpv-item-video" data-src="https://youtu.be/cwsvZL-eMU8">
-                                                    <img width="899" height="600" src="/img/Xylitol-Video-Thumbnail.png" alt="" />
-                                                </span>
-                                            </div> */}
+                                                    <div className="woocommerce-product-gallery__image" style={{ width: '640px', marginRight: '0px', float: 'left', display: 'block', position: 'relative', overflow: 'hidden' }}>
+                                                        {activeImage === '/img/Lidocaine-Video-Thumbnail.png' && (
+                                                            <>
+                                                                <img
+                                                                    width={600}
+                                                                    height={400}
+                                                                    src="/img/Lidocaine-Video-Thumbnail.png"
+                                                                    className="wp-post-image"
+                                                                    alt="Xylistrip Video"
+                                                                    title="Xylitol Video Thumbnail"
+                                                                />
+                                                                <span className="wpcpv-item wpcpv-item-video" data-src="https://youtu.be/cwsvZL-eMU8">
+                                                                    <img width="600" height="600" src="/img/Lidocaine-Video-Thumbnail.png" alt="" />
+                                                                </span>
+                                                            </>
+                                                        )}
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <ol className="flex-control-nav flex-control-thumbs">
+                                                {imagePaths.map((path, index) => (
+                                                    <li key={index}>
+                                                        <img
+                                                            onLoad={(e) => {
+                                                                e.target.width = e.target.naturalWidth;
+                                                                e.target.height = e.target.naturalHeight;
+                                                            }}
+                                                            src={path}
+                                                            alt={`Image ${index}`}
+                                                            className={activeImage === path ? 'flex-active' : ''}
+                                                            draggable="false"
+                                                            width={100}
+                                                            height={100}
+                                                            onClick={() => handleImageClick(path)}
+                                                        />
+                                                    </li>
+                                                ))}
+                                                {/* <li className="wpcpv-thumb-video">
+                                                    <img onLoad="this.width = this.naturalWidth; this.height = this.naturalHeight" src="/img/Xylitol-Video-Thumbnail.png" draggable="false" width={100} height={100} />
+                                                    <span className="wpcpv-item wpcpv-item-video my-class" data-src="https://youtu.be/cwsvZL-eMU8">
+                                                        <img width="899" height="600" src="/img/Xylitol-Video-Thumbnail.png" alt="" />
+                                                    </span>
+                                                </li> */}
+                                            </ol>
                                         </div>
-                                        <ol className="flex-control-nav flex-control-thumbs">
-                                            <li>
-                                                <img onLoad="this.width = this.naturalWidth; this.height = this.naturalHeight" src="/img/xylitol.png" alt="Xylistrip" className="flex-active" draggable="false" width={100} height={100} />
-                                            </li>
-                                            <li>
-                                                <img onLoad="this.width = this.naturalWidth; this.height = this.naturalHeight" src="/img/xylitol-front.png" alt="xylitol-front" draggable="false" width={100} height={100} />
-                                            </li>
-                                            <li>
-                                                <img onLoad="this.width = this.naturalWidth; this.height = this.naturalHeight" src="/img/xylitol-back.png" alt="xylitol-back" draggable="false" width={100} height={100} />
-                                            </li>
-                                            <li className="wpcpv-thumb-video">
-                                                <img onLoad="this.width = this.naturalWidth; this.height = this.naturalHeight" src="/img/Xylitol-Video-Thumbnail.png" draggable="false" width={100} height={100} />
-                                                <span className="wpcpv-item wpcpv-item-video my-class" data-src="https://youtu.be/cwsvZL-eMU8">
-                                                    <img width="899" height="600" src="/img/Xylitol-Video-Thumbnail.png" alt="" />
-                                                </span>
-                                            </li>
-                                        </ol>
                                         <div className="summary entry-summary">
                                             <h1 className="product_title entry-title">XyliStrip</h1>
 
@@ -103,7 +126,7 @@ const Lqs = () => {
                                                             <td className="value">
                                                                 <select id="size" className name="attribute_size" data-attribute_name="attribute_size" data-show_option_none="yes">
                                                                     <option value>Choose an option</option>
-                                                                    <option value="28 per pack" selected="selected">28 per pack</option>
+                                                                    <option value="28 per pack" defaultValue>28 per pack</option>
                                                                 </select>
                                                                 <a className="reset_variations" href="#">Clear</a>
                                                             </td>
@@ -131,29 +154,29 @@ const Lqs = () => {
                                         </div>
                                         <div className="woocommerce-tabs wc-tabs-wrapper">
                                             <ul className="tabs wc-tabs" role="tablist">
-                                                <li className="additional_information_tab" id="tab-title-additional_information" role="tab" aria-controls="tab-additional_information">
-                                                    <a href="#tab-additional_information">
+                                                <li className={`additional_information_tab ${activeTab === '1' ? 'active' : ''}`} id="tab-title-additional_information" role="tab" aria-controls="tab-additional_information">
+                                                    <a href="#tab-additional_information" onClick={() => handleTabClick('1')}>
                                                         Additional information
                                                     </a>
                                                 </li>
-                                                <li className="advantages-of-the-oral-thin-film-quickstrip_tab" id="tab-title-advantages-of-the-oral-thin-film-quickstrip" role="tab" aria-controls="tab-advantages-of-the-oral-thin-film-quickstrip">
-                                                    <a href="#tab-advantages-of-the-oral-thin-film-quickstrip">
-                                                        Advantages of the Oral Thin Film QuickStrip™
+                                                <li className={`description_tab ${activeTab === '2' ? 'active' : ''}`} id="tab-title-description" role="tab" aria-controls="tab-advantages-of-the-oral-thin-film-quickstrip">
+                                                    <a href="#tab-advantages-of-the-oral-thin-film-quickstrip" onClick={() => handleTabClick('2')}>
+                                                        Description
                                                     </a>
                                                 </li>
-                                                <li className="ingredients-dose_tab" id="tab-title-ingredients-dose" role="tab" aria-controls="tab-ingredients-dose">
-                                                    <a href="#tab-ingredients-dose">
+                                                <li className={`ingredients-dose_tab ${activeTab === '3' ? 'active' : ''}`} id="tab-title-ingredients-dose" role="tab" aria-controls="tab-ingredients-dose">
+                                                    <a href="#tab-ingredients-dose" onClick={() => handleTabClick('3')}>
                                                         Ingredients &amp; Dose
                                                     </a>
                                                 </li>
-                                                <li className="how-does-xylitol-work_tab" id="tab-title-how-does-xylitol-work" role="tab" aria-controls="tab-how-does-xylitol-work">
-                                                    <a href="#tab-how-does-xylitol-work">
-                                                        How Does Xylitol Work?
+                                                <li className={`benefits-of-use-for-patients_tab ${activeTab === '4' ? 'active' : ''}`} id="tab-title-benefits-of-use-for-patients" role="tab" aria-controls="tab-how-does-xylitol-work">
+                                                    <a href="#tab-how-does-xylitol-work" onClick={() => handleTabClick('4')}>
+                                                        Benefits of Use for Patients
                                                     </a>
                                                 </li>
-                                                <li className="signs-symptoms-causes_tab" id="tab-title-signs-symptoms-causes" role="tab" aria-controls="tab-signs-symptoms-causes">
-                                                    <a href="#tab-signs-symptoms-causes">
-                                                        Signs, Symptoms &amp; Causes
+                                                <li className={`benefits-for-the-practitioner_tab ${activeTab === '5' ? 'active' : ''}`} id="tab-title-benefits-for-the-practitioner" role="tab" aria-controls="tab-signs-symptoms-causes">
+                                                    <a href="#tab-signs-symptoms-causes" onClick={() => handleTabClick('5')}>
+                                                        Benefits for the Practitioner
                                                     </a>
                                                 </li>
                                             </ul>
@@ -224,11 +247,11 @@ const Lqs = () => {
                                                         <img width="300" height="300" src="/img/xylitol.png" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Lidocaine" decoding="async" />
                                                     </a>
                                                     <a href="https://quickstripdental.com/product/lqs-lidocaine/">
-                                                        <h2 className="woocommerce-loop-product__title">Hi</h2>
+                                                        <h2 className="woocommerce-loop-product__title">XyliStrip</h2>
                                                     </a>
                                                     <span className="price">
                                                         <span className="woocommerce-Price-amount amount"><bdi>
-                                                            <span className="woocommerce-Price-currencySymbol">$</span>269.00</bdi>
+                                                            <span className="woocommerce-Price-currencySymbol">$</span>25.00</bdi>
                                                         </span>
                                                     </span>
                                                     <a href="https://quickstripdental.com/product/lqs-lidocaine/" data-quantity={1} className="button product_type_variable add_to_cart_button" data-product_id={274} data-product_sku aria-label="Select options for “LQS - Lidocaine”" aria-describedby="This product has multiple variants. The options may be chosen on the product page" rel="nofollow" data-product-type="variable" data-verify_nonce="76f6e55753">Select options</a>
