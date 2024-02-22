@@ -399,8 +399,16 @@ input[type="text"]::-webkit-input-placeholder {
 }
 
 .aux-svg-arrow {
-    background-image: url("../fonts/symbols.svg");
+    background-image: url("https://quickstripdental.com/wp-content/themes/phlox/css/images/svg/symbols.svg");
     background-repeat: no-repeat;
+    display: block
+}
+
+.aux-svg-arrow,
+.aux-svg-symbol {
+    background-image: url("https://quickstripdental.com/wp-content/themes/phlox/css/images/svg/symbols.svg");
+    background-repeat: no-repeat;
+    width: 10px;
     display: block
 }
 
@@ -434,6 +442,24 @@ input[type="text"]::-webkit-input-placeholder {
 
 .aux-cross-symbol::before {
     transform: rotate(45deg)
+}
+
+.aux-plus-symbol::after,
+.aux-minus-symbol::after,
+.aux-cross-symbol::after,
+.aux-master-menu.aux-narrow .aux-submenu-indicator::after,
+.aux-fs-menu .aux-master-menu .aux-submenu-indicator::after,
+.aux-plus-symbol::before,
+.aux-minus-symbol::before,
+.aux-cross-symbol::before,
+.aux-master-menu.aux-narrow .aux-submenu-indicator::before,
+.aux-fs-menu .aux-master-menu .aux-submenu-indicator::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #333
 }
 
 body {
@@ -3233,26 +3259,6 @@ body h5 {
 
     .elementor-71 .elementor-element.elementor-element-0d60e71>.elementor-widget-container {
         margin: 22px 0px 0px 0px
-    }
-}
-
-.elementor-71 .elementor-element.elementor-element-c63e02d .aux-item-content:after {
-    display: none !important
-}
-
-.elementor-71 .elementor-element.elementor-element-c63e02d .current_page_item .aux-menu-label {
-    color: #000 !important
-}
-
-.elementor-71 .elementor-element.elementor-element-c63e02d .aux-burger.aux-lite-small .mid-line {
-    margin: 6.5px 0
-}
-
-@media only screen and (max-width:767px) {
-    .elementor-71 .elementor-element.elementor-element-c63e02d .elementor-widget-container {
-        background-image: url('/wp-content/uploads/2019/10/Group_1270.svg');
-        min-width: 50px;
-        background-repeat: no-repeat
     }
 }
 
@@ -6194,7 +6200,7 @@ ul {
 
 @media only screen and (max-width: 767px) {
     .elementor-71 .elementor-element.elementor-element-c63e02d .elementor-widget-container {
-        background-image: url('/wp-content/uploads/2019/10/Group_1270.svg');
+        background-image: url('https://quickstripdental.com/wp-content/uploads/2019/10/Group_1270.svg');
         min-width: 50px;
         background-repeat: no-repeat;
     }
@@ -8517,10 +8523,4 @@ video.wp-video-shortcode {
 
 .cls-3 {
     fill: #fff;
-}
-
-@media only screen and (min-width: 769px) {
-    .elementor-element-c63e02d .aux-burger-box {
-        display: none
-    }
 }

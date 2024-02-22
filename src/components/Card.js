@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Card = () => {
@@ -46,10 +47,10 @@ const Card = () => {
                             </div>
                             <div className="elementor-element elementor-element-ab33674 elementor-widget elementor-widget-aux_button" data-id="ab33674" data-element_type="widget" data-widget_type="aux_button.default">
                                 <div className="elementor-widget-container">
-                                    <a href="/product/xylistrip/" target="_self" className="aux-button aux-medium aux-carmine-pink aux-curve aux-none aux-uppercase">
+                                    <Link href="/product/xylistrip" target="_self" className="aux-button aux-medium aux-carmine-pink aux-curve aux-none aux-uppercase">
                                         <span className="aux-overlay" />
                                         <span className="aux-text">Browse</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -95,10 +96,10 @@ const Card = () => {
                             </div>
                             <div className="elementor-element elementor-element-58edb64 elementor-widget elementor-widget-aux_button" data-id="58edb64" data-element_type="widget" data-widget_type="aux_button.default">
                                 <div className="elementor-widget-container">
-                                    <a href="/product/lqs-lidocaine/" target="_self" className="aux-button aux-medium aux-carmine-pink aux-curve aux-none aux-uppercase">
+                                    <Link href="/product/lqs-lidocaine" target="_self" className="aux-button aux-medium aux-carmine-pink aux-curve aux-none aux-uppercase">
                                         <span className="aux-overlay" />
                                         <span className="aux-text">Browse</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

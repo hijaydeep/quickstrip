@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Banner = () => {
@@ -80,24 +81,24 @@ const Banner = () => {
                                             <div className="elementor-element elementor-element-27e7e71 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-aux_modern_button" data-id="27e7e71" data-element_type="widget" data-widget_type="aux_modern_button.default">
                                                 <div className="elementor-widget-container">
                                                     <div className="aux-modern-button-wrapper aux-modern-button-align-center">
-                                                        <a className="aux-modern-button aux-white aux-modern-button-md aux-modern-button-curve aux-modern-button-default aux-icon-" href="/our-products">
+                                                        <Link className="aux-modern-button aux-white aux-modern-button-md aux-modern-button-curve aux-modern-button-default aux-icon-" href="/our-products">
                                                             <div className="aux-overlay" />
                                                             <div className="aux-text">
                                                                 <span className="aux-text-before">View Products</span>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="elementor-element elementor-element-3d6f0ec elementor-widget__width-initial elementor-widget elementor-widget-aux_modern_button" data-id="3d6f0ec" data-element_type="widget" data-widget_type="aux_modern_button.default">
                                                 <div className="elementor-widget-container">
                                                     <div className="aux-modern-button-wrapper aux-modern-button-align-center">
-                                                        <a className="aux-modern-button aux-black aux-modern-button-md aux-modern-button-curve aux-modern-button-default aux-icon-" href="/about-us">
+                                                        <Link className="aux-modern-button aux-black aux-modern-button-md aux-modern-button-curve aux-modern-button-default aux-icon-" href="/about-us">
                                                             <div className="aux-overlay" />
                                                             <div className="aux-text">
                                                                 <span className="aux-text-before">About Us</span>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>

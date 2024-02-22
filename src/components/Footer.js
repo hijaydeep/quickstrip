@@ -17,9 +17,9 @@ const Footer = () => {
                                                 <section className="widget-container aux-widget-image aux-alignnone aux-parent-auf3cb420d">
                                                     <div className="aux-media-hint-frame ">
                                                         <div className="aux-media-image aux-hover-active">
-                                                            <a href="/" data-elementor-open-lightbox="no" data-original-width={858} data-original-height={389} data-caption="QuickStrip Dental" target="_self">
+                                                            <Link href="/" data-elementor-open-lightbox="no" data-original-width={858} data-original-height={389} data-caption="QuickStrip Dental" target="_self">
                                                                 <img width={858} height={389} src="/img/footer_logo.png" className="aux-attachment aux-featured-image aux-attachment-id-122 aux-preload aux-blank" alt="QuickStrip Dental" data-ratio="2.21" data-original-w={858} />
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </section>
@@ -32,22 +32,22 @@ const Footer = () => {
                                                         <div className="aux-widget-icon-list-inner">
                                                             <ul className="aux-icon-list-items aux-direction-horizontal">
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-0d584e4 elementor-repeater-item-0d584e4">
-                                                                    <a className="aux-icon-list-link" href="https://www.facebook.com/quickstriplife/" target="_blank">
+                                                                    <Link className="aux-icon-list-link" href="https://www.facebook.com/quickstriplife/" target="_blank">
                                                                         <span className="aux-icon-list-icon auxicon-facebook" />
                                                                         <span className="aux-list-connector" />
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-ad5a2db elementor-repeater-item-ad5a2db">
-                                                                    <a className="aux-icon-list-link" href="https://twitter.com/Quickstrip_life" target="_blank">
+                                                                    <Link className="aux-icon-list-link" href="https://twitter.com/Quickstrip_life" target="_blank">
                                                                         <span className="aux-icon-list-icon auxicon-twitter" />
                                                                         <span className="aux-list-connector" />
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-7af8636 elementor-repeater-item-7af8636">
-                                                                    <a className="aux-icon-list-link" href="https://www.instagram.com/quickstrip_life/" target="_blank">
+                                                                    <Link className="aux-icon-list-link" href="https://www.instagram.com/quickstrip_life/" target="_blank">
                                                                         <span className="aux-icon-list-icon auxicon-instagram" />
                                                                         <span className="aux-list-connector" />
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                             </ul>
                                                         </div>

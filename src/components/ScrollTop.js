@@ -24,7 +24,7 @@ const ScrollTop = () => {
     return (
         <>
             {isVisible && (
-                <div className="aux-goto-top-btn aux-align-btn-right" onClick={scrollToTop} style={{ display: 'block', transform: 'translateY(0px)' }}>
+                <div className="aux-goto-top-btn aux-align-btn-right" onClick={scrollToTop} style={{ display: isVisible ? 'block' : 'none', transform: isVisible ? 'translateY(0px)' : 'translateY(150px)' }}>
                     <div className="aux-hover-slide aux-arrow-nav aux-round aux-outline">
                         <span className="aux-overlay" />
                         <span className="aux-svg-arrow aux-h-small-up" />

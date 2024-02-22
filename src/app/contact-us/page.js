@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export const metadata = {
@@ -14,7 +15,7 @@ const page = () => {
                         <p class="aux-breadcrumbs">
                             <span class="aux-breadcrumb-sep breadcrumb-icon auxicon-chevron-right-1"></span>
                             <span>
-                                <a href="https://quickstripdental.com" title="Home">Home</a>
+                                <Link href="https://quickstripdental.com" title="Home">Home</Link>
                             </span>
                             <span class="aux-breadcrumb-sep breadcrumb-icon auxicon-chevron-right-1"></span>
                             <span>Contact Us</span>

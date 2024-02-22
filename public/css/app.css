@@ -2805,6 +2805,11 @@ p.demo_store a {
     list-style: none outside
 }
 
+/* .aux-master-menu.aux-narrow.aux-skin-classic .aux-menu-item>.aux-item-content {
+    padding: 1.125em 1.0625em;
+    font-size: .875em;
+} */
+
 .woocommerce .widget_rating_filter ul li {
     padding: 0 0 1px;
     list-style: none
@@ -18101,13 +18106,6 @@ textarea.aux-light.aux-bottom-line {
       $Copyright
   
   ===============================================================*/
-.aux-svg-arrow,
-.aux-svg-symbol {
-    background-image: url("/img/scroll_top.png");
-    background-repeat: no-repeat;
-    width: 10px;
-    display: block
-}
 
 .aux-svg-arrow.aux-thick-up,
 .aux-svg-symbol.aux-thick-up {
@@ -18587,24 +18585,6 @@ textarea.aux-light.aux-bottom-line {
 .aux-svg-arrow.aux-small-plus.aux-white,
 .aux-svg-symbol.aux-small-plus.aux-white {
     background-position: -178px -1205px
-}
-
-.aux-plus-symbol::after,
-.aux-minus-symbol::after,
-.aux-cross-symbol::after,
-.aux-master-menu.aux-narrow .aux-submenu-indicator::after,
-.aux-fs-menu .aux-master-menu .aux-submenu-indicator::after,
-.aux-plus-symbol::before,
-.aux-minus-symbol::before,
-.aux-cross-symbol::before,
-.aux-master-menu.aux-narrow .aux-submenu-indicator::before,
-.aux-fs-menu .aux-master-menu .aux-submenu-indicator::before {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: #333
 }
 
 .aux-plus-symbol::after,
@@ -54585,10 +54565,10 @@ blockquote {
     background-color: #FFF
 }
 
-.aux-master-menu.aux-narrow.aux-skin-classic .aux-menu-item>.aux-item-content {
+/* .aux-master-menu.aux-narrow.aux-skin-classic .aux-menu-item>.aux-item-content {
     padding: 1.125em 1.0625em;
     font-size: .875em
-}
+} */
 
 .aux-toggle-menu-bar .aux-master-menu.aux-narrow.aux-skin-classic .aux-menu-item>.aux-item-content {
     padding: 1.125em 0
