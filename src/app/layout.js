@@ -24,7 +24,6 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/app.css" />
         <link rel="stylesheet" href="/css/product.css" />
-        {/*   <link rel="stylesheet" href="/css/elementor.css" /> */}
       </head>
       <body className="home page-template page-template-templates page-template-page-builder-content page-template-templatespage-builder-content-php page page-id-105 wp-custom-logo theme-phlox woocommerce-no-js elementor-default elementor-kit-69 elementor-page elementor-page-105 phlox aux-full-width aux-resp aux-s-fhd aux-top-sticky aux-page-animation-off _auxels">
         <div id="inner-body">

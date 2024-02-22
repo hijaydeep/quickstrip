@@ -32,19 +32,19 @@ const Footer = () => {
                                                         <div className="aux-widget-icon-list-inner">
                                                             <ul className="aux-icon-list-items aux-direction-horizontal">
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-0d584e4 elementor-repeater-item-0d584e4">
-                                                                    <Link className="aux-icon-list-link" href="https://www.facebook.com/quickstriplife/" target="_blank">
+                                                                    <Link className="aux-icon-list-link" href="https://www.facebook.com/quickstriplife/">
                                                                         <span className="aux-icon-list-icon auxicon-facebook" />
                                                                         <span className="aux-list-connector" />
                                                                     </Link>
                                                                 </li>
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-ad5a2db elementor-repeater-item-ad5a2db">
-                                                                    <Link className="aux-icon-list-link" href="https://twitter.com/Quickstrip_life" target="_blank">
+                                                                    <Link className="aux-icon-list-link" href="https://twitter.com/Quickstrip_life">
                                                                         <span className="aux-icon-list-icon auxicon-twitter" />
                                                                         <span className="aux-list-connector" />
                                                                     </Link>
                                                                 </li>
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-7af8636 elementor-repeater-item-7af8636">
-                                                                    <Link className="aux-icon-list-link" href="https://www.instagram.com/quickstrip_life/" target="_blank">
+                                                                    <Link className="aux-icon-list-link" href="https://www.instagram.com/quickstrip_life/">
                                                                         <span className="aux-icon-list-icon auxicon-instagram" />
                                                                         <span className="aux-list-connector" />
                                                                     </Link>
@@ -75,23 +75,23 @@ const Footer = () => {
                                                         <div className="aux-widget-icon-list-inner">
                                                             <ul className="aux-icon-list-items aux-direction-vertical">
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-bcca7fd elementor-repeater-item-bcca7fd">
-                                                                    <Link className="aux-icon-list-link" href="/">
+                                                                    <Link href="/" className="aux-icon-list-link">
                                                                         <span className="aux-icon-list-text">Home</span>
                                                                         <span className="aux-list-connector" />
                                                                     </Link>
                                                                 </li>
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-2e26e09 elementor-repeater-item-2e26e09">
-                                                                    <Link className="aux-icon-list-link" href="/about-us">
+                                                                    <Link href="/about-us" className="aux-icon-list-link">
                                                                         <span className="aux-icon-list-text">About</span>
                                                                         <span className="aux-list-connector" />
                                                                     </Link>
                                                                 </li>
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-a7886e6 elementor-repeater-item-a7886e6">
-                                                                    <Link className="aux-icon-list-link" href="/our-products">
+                                                                    <Link href="/our-products" className="aux-icon-list-link">
                                                                         <span className="aux-icon-list-text">Products</span>
                                                                         <span className="aux-list-connector" /></Link></li>
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-2cd4694 elementor-repeater-item-2cd4694">
-                                                                    <Link className="aux-icon-list-link" href="/contact-us">
+                                                                    <Link href="/contact-us" className="aux-icon-list-link">
                                                                         <span className="aux-icon-list-text">Contact</span>
                                                                         <span className="aux-list-connector" />
                                                                     </Link>

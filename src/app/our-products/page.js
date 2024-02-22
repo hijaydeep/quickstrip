@@ -15,7 +15,7 @@ const page = () => {
                         <p className="aux-breadcrumbs">
                             <span className="aux-breadcrumb-sep breadcrumb-icon auxicon-chevron-right-1"></span>
                             <span>
-                                <Link href="/" title="Home">Home</Link>
+                                <Link href="/">Home</Link>
                             </span>
                             <span className="aux-breadcrumb-sep breadcrumb-icon auxicon-chevron-right-1"></span>
                             <span>Products</span>
@@ -73,7 +73,7 @@ const page = () => {
                                                             <div className="elementor-element elementor-element-3802ed9 elementor-align-center elementor-widget elementor-widget-button" data-id="3802ed9" data-element_type="widget" data-widget_type="button.default">
                                                                 <div className="elementor-widget-container">
                                                                     <div className="elementor-button-wrapper">
-                                                                        <Link className="elementor-button elementor-button-link elementor-size-sm" href="/product/xylistrip">
+                                                                        <Link href="/product/xylistrip" className="elementor-button elementor-button-link elementor-size-sm">
                                                                             <span className="elementor-button-content-wrapper">
                                                                                 <span className="elementor-button-text">Browse</span>
                                                                             </span>
@@ -114,7 +114,7 @@ const page = () => {
                                                             <div className="elementor-element elementor-element-d4c59d6 elementor-align-center elementor-widget elementor-widget-button" data-id="d4c59d6" data-element_type="widget" data-widget_type="button.default">
                                                                 <div className="elementor-widget-container">
                                                                     <div className="elementor-button-wrapper">
-                                                                        <Link className="elementor-button elementor-button-link elementor-size-sm" href="/product/lqs-lidocaine">
+                                                                        <Link href="/product/lqs-lidocaine" className="elementor-button elementor-button-link elementor-size-sm">
                                                                             <span className="elementor-button-content-wrapper">
                                                                                 <span className="elementor-button-text">Browse</span>
                                                                             </span>
@@ -139,7 +139,7 @@ const page = () => {
                                                         <div className="elementor-element elementor-element-f272da9 e-con-full e-flex e-con e-child" data-id="f272da9" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
                                                             <div className="elementor-element elementor-element-de9de1d elementor-widget elementor-widget-image" data-id="de9de1d" data-element_type="widget" data-widget_type="image.default">
                                                                 <div className="elementor-widget-container">
-                                                                    <Link href="https://quickstrip.life/products/quickstrip-energy" target="_blank">
+                                                                    <Link href="https://quickstrip.life/products/quickstrip-energy">
                                                                         <img decoding="async" width="800" height="685" src="/img/TM_Energy" className="attachment-full size-full wp-image-1358" alt="QuickStripTM Energy" srcSet="https://quickstripdental.com/wp-content/uploads/2022/12/QS_Energy_box.webp 800w, https://quickstripdental.com/wp-content/uploads/2022/12/QS_Energy_box-600x514.webp 600w, https://quickstripdental.com/wp-content/uploads/2022/12/QS_Energy_box-105x90.webp 105w" sizes="(max-width: 800px) 100vw, 800px" />
                                                                     </Link>
                                                                 </div>
@@ -147,7 +147,7 @@ const page = () => {
                                                             <div className="elementor-element elementor-element-a1f0342 elementor-widget elementor-widget-heading" data-id="a1f0342" data-element_type="widget" data-widget_type="heading.default">
                                                                 <div className="elementor-widget-container">
                                                                     <h3 className="elementor-heading-title elementor-size-default">
-                                                                        <Link href="https://quickstrip.life/products/quickstrip-energy" target="_blank">QuickStripTM Energy</Link>
+                                                                        <Link href="https://quickstrip.life/products/quickstrip-energy">QuickStripTM Energy</Link>
                                                                     </h3>
                                                                 </div>
                                                             </div>
@@ -155,7 +155,7 @@ const page = () => {
                                                         <div className="elementor-element elementor-element-e17d88d e-con-full e-flex e-con e-child" data-id="e17d88d" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
                                                             <div className="elementor-element elementor-element-4f30206 elementor-widget elementor-widget-image" data-id="4f30206" data-element_type="widget" data-widget_type="image.default">
                                                                 <div className="elementor-widget-container">
-                                                                    <Link href="https://quickstrip.life/products/quickstriptm-b12" target="_blank">
+                                                                    <Link href="https://quickstrip.life/products/quickstriptm-b12">
                                                                         <img decoding="async" width="800" height="685" src="/img/TM_Vitamin" className="attachment-full size-full wp-image-1357" alt="" srcSet="https://quickstripdental.com/wp-content/uploads/2022/12/QS_B12_box-10.webp 800w, https://quickstripdental.com/wp-content/uploads/2022/12/QS_B12_box-10-600x514.webp 600w, https://quickstripdental.com/wp-content/uploads/2022/12/QS_B12_box-10-105x90.webp 105w" sizes="(max-width: 800px) 100vw, 800px" />
                                                                     </Link>
                                                                 </div>
@@ -163,7 +163,7 @@ const page = () => {
                                                             <div className="elementor-element elementor-element-98bb2c6 elementor-widget elementor-widget-heading" data-id="98bb2c6" data-element_type="widget" data-widget_type="heading.default">
                                                                 <div className="elementor-widget-container">
                                                                     <h3 className="elementor-heading-title elementor-size-default">
-                                                                        <Link href="https://quickstrip.life/products/quickstriptm-b12" target="_blank">QuickStripTM Vitamin B12</Link>
+                                                                        <Link href="https://quickstrip.life/products/quickstriptm-b12">QuickStripTM Vitamin B12</Link>
                                                                     </h3>
                                                                 </div>
                                                             </div>
@@ -171,7 +171,7 @@ const page = () => {
                                                         <div className="elementor-element elementor-element-b63d070 e-con-full e-flex e-con e-child" data-id="b63d070" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
                                                             <div className="elementor-element elementor-element-ad0ed56 elementor-widget elementor-widget-image" data-id="ad0ed56" data-element_type="widget" data-widget_type="image.default">
                                                                 <div className="elementor-widget-container">
-                                                                    <Link href="https://quickstrip.life/products/quickstriptm-sleep" target="_blank">
+                                                                    <Link href="https://quickstrip.life/products/quickstriptm-sleep">
                                                                         <img decoding="async" width="768" height="658" src="/img/TM_Sleep" className="attachment-full size-full wp-image-1107" alt="QuickStripTM Sleep" srcSet="https://quickstripdental.com/wp-content/uploads/2022/11/QS_Sleep-768x658-1.jpg 768w, https://quickstripdental.com/wp-content/uploads/2022/11/QS_Sleep-768x658-1-200x171.jpg 200w, https://quickstripdental.com/wp-content/uploads/2022/11/QS_Sleep-768x658-1-600x514.jpg 600w, https://quickstripdental.com/wp-content/uploads/2022/11/QS_Sleep-768x658-1-105x90.jpg 105w" sizes="(max-width: 768px) 100vw, 768px" />
                                                                     </Link>
                                                                 </div>
@@ -179,7 +179,7 @@ const page = () => {
                                                             <div className="elementor-element elementor-element-bce49d4 elementor-widget elementor-widget-heading" data-id="bce49d4" data-element_type="widget" data-widget_type="heading.default">
                                                                 <div className="elementor-widget-container">
                                                                     <h3 className="elementor-heading-title elementor-size-default">
-                                                                        <Link href="https://quickstrip.life/products/quickstriptm-sleep" target="_blank">QuickStripTM Sleep</Link>
+                                                                        <Link href="https://quickstrip.life/products/quickstriptm-sleep">QuickStripTM Sleep</Link>
                                                                     </h3>
                                                                 </div>
                                                             </div>

@@ -15,7 +15,7 @@ const page = () => {
                         <p class="aux-breadcrumbs">
                             <span class="aux-breadcrumb-sep breadcrumb-icon auxicon-chevron-right-1"></span>
                             <span>
-                                <Link href="https://quickstripdental.com" title="Home">Home</Link>
+                                <Link href="/">Home</Link>
                             </span>
                             <span class="aux-breadcrumb-sep breadcrumb-icon auxicon-chevron-right-1"></span>
                             <span>Contact Us</span>

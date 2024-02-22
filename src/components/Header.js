@@ -36,13 +36,13 @@ const Header = () => {
         };
     }, []);
 
-    const toggleSidebar = () => {
-        setSidebarOpen(!isSidebarOpen);
-    };
+    // const toggleSidebar = () => {
+    //     setSidebarOpen(!isSidebarOpen);
+    // };
 
-    const handleLinkClick = () => {
-        setSidebarOpen(false);
-    };
+    // const handleLinkClick = () => {
+    //     setSidebarOpen(false);
+    // };
 
     return (
         <>

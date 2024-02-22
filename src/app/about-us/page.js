@@ -16,7 +16,7 @@ const page = () => {
                         <p className="aux-breadcrumbs">
                             <span className="aux-breadcrumb-sep breadcrumb-icon auxicon-chevron-right-1" />
                             <span>
-                                <Link href="/" title="Home">Home</Link>
+                                <Link href="/">Home</Link>
                             </span>
                             <span className="aux-breadcrumb-sep breadcrumb-icon auxicon-chevron-right-1" />
                             <span>About Us</span>
@@ -45,7 +45,11 @@ const page = () => {
                                                         <div className="elementor-element elementor-element-5ffebb1 aux-appear-watch-animation aux-fade-in-up aux-animated elementor-widget elementor-widget-aux_modern_heading" data-id="5ffebb1" data-element_type="widget" data-widget_type="aux_modern_heading.default">
                                                             <div className="elementor-widget-container">
                                                                 <section className="aux-widget-modern-heading">
-                                                                    <div className="aux-widget-inner"><h2 className="aux-modern-heading-primary" /><h3 className="aux-modern-heading-secondary"><span className="aux-head-before">Who we are</span></h3></div>
+                                                                    <div className="aux-widget-inner"><h2 className="aux-modern-heading-primary" />
+                                                                        <h3 className="aux-modern-heading-secondary">
+                                                                            <span className="aux-head-before">Who we are</span>
+                                                                        </h3>
+                                                                    </div>
                                                                 </section>
                                                             </div>
                                                         </div>
@@ -136,7 +140,7 @@ const page = () => {
                                                         </div>
                                                         <div className="elementor-element elementor-element-6160662 aux-appear-watch-animation aux-fade-in-up aux-animated elementor-widget elementor-widget-aux_button" data-id='6160662' data-element_type="widget" data-widget_type="aux_button.default">
                                                             <div className="elementor-widget-container">
-                                                                <Link href="/contact-us" target="_self" className="aux-button aux-medium aux-carmine-pink aux-curve aux-none aux-uppercase">
+                                                                <Link href="/contact-us" className="aux-button aux-medium aux-carmine-pink aux-curve aux-none aux-uppercase">
                                                                     <span className="aux-overlay" /><span className="aux-text">Contact Us</span>
                                                                 </Link>
                                                             </div>

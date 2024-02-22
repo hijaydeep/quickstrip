@@ -153,10 +153,10 @@ const Xylistrip = () => {
                                                     <li>Helps reduce the incidence of cavities</li>
                                                 </ul>
                                                 <p style={{ overflow: 'visible' }}>
-                                                    <Link href="https://www.henryschein.ca/ca-en/Shopping/Products.aspx?productid=9401174,9401175" id="btn-add-to-cart" target="_blank" rel="noopener">Buy Now</Link>
+                                                    <Link href="#" id="btn-add-to-cart" rel="noopener">Buy Now</Link>
                                                 </p>
                                             </div>
-                                            <form className="variations_form cart" action="https://quickstripdental.com/product/xylistrip/" method="post" encType="multipart/form-data" data-product_id={232} data-product_variations="[{&quot;attributes&quot;:{&quot;attribute_size&quot;:&quot;28 per pack&quot;},&quot;availability_html&quot;:&quot;&quot;,&quot;backorders_allowed&quot;:false,&quot;dimensions&quot;:{&quot;length&quot;:&quot;&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;},&quot;dimensions_html&quot;:&quot;N\/A&quot;,&quot;display_price&quot;:25,&quot;display_regular_price&quot;:25,&quot;image&quot;:{&quot;title&quot;:&quot;Quickstrip Xylistrip&quot;,&quot;caption&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/quickstripdental.com\/wp-content\/uploads\/2022\/10\/Quickstrip-Xylistrip-Product.webp&quot;,&quot;alt&quot;:&quot;Xylistrip&quot;,&quot;src&quot;:&quot;https:\/\/quickstripdental.com\/wp-content\/uploads\/2022\/10\/Quickstrip-Xylistrip-Product.webp&quot;,&quot;,&quot;sizes&quot;:&quot;(max-width: 600px) 100vw, 600px&quot;,&quot;full_src&quot;:&quot;https:\/\/quickstripdental.com\/wp-content\/uploads\/2022\/10\/Quickstrip-Xylistrip-Product.webp&quot;,&quot;full_src_w&quot;:600,&quot;full_src_h&quot;:600,&quot;gallery_thumbnail_src&quot;:&quot;https:\/\/quickstripdental.com\/wp-content\/uploads\/2022\/10\/Quickstrip-Xylistrip-Product-100x100.webp&quot;,&quot;gallery_thumbnail_src_w&quot;:100,&quot;gallery_thumbnail_src_h&quot;:100,&quot;thumb_src&quot;:&quot;https:\/\/quickstripdental.com\/wp-content\/uploads\/2022\/10\/Quickstrip-Xylistrip-Product-300x300.webp&quot;,&quot;thumb_src_w&quot;:300,&quot;thumb_src_h&quot;:300,&quot;src_w&quot;:600,&quot;src_h&quot;:600},&quot;image_id&quot;:1336,&quot;is_downloadable&quot;:false,&quot;is_in_stock&quot;:true,&quot;is_purchasable&quot;:true,&quot;is_sold_individually&quot;:&quot;no&quot;,&quot;is_virtual&quot;:false,&quot;max_qty&quot;:&quot;&quot;,&quot;min_qty&quot;:1,&quot;price_html&quot;:&quot;&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variation_description&quot;:&quot;&quot;,&quot;variation_id&quot;:1143,&quot;variation_is_active&quot;:true,&quot;variation_is_visible&quot;:true,&quot;weight&quot;:&quot;&quot;,&quot;weight_html&quot;:&quot;N\/A&quot;}]">
+                                            <form className="variations_form cart" action="https://quickstripdental.com/product/xylistrip/" method="post" encType="multipart/form-data" data-product_id={232}>
                                                 <table className="variations" cellSpacing={0} role="presentation">
                                                     <tbody>
                                                         <tr>
@@ -189,7 +189,7 @@ const Xylistrip = () => {
                                             </form>
                                             <div className="product_meta">
                                                 <span className="sku_wrapper">SKU: <span className="sku">N/A</span></span>
-                                                <span className="posted_in">Category: <Link href="https://quickstripdental.com/product-category/dental/" rel="tag">Dental</Link></span>
+                                                <span className="posted_in">Category: <Link href="#" rel="tag">Dental</Link></span>
                                             </div>
                                         </div>
                                         <div className="woocommerce-tabs wc-tabs-wrapper">
