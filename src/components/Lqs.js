@@ -1,6 +1,6 @@
 "use client";
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Lqs = () => {
 
@@ -11,13 +11,39 @@ const Lqs = () => {
 
     const [activeImage, setActiveImage] = useState(imagePaths[0]);
     const [activeTab, setActiveTab] = useState('1');
+    const [olHeight, setOlHeight] = useState(640);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleImageClick = (path) => {
         setActiveImage(path);
     };
 
+    const handleModal = () => {
+        setIsModalOpen(true);
+    }
+
     const handleTabClick = (tabId) => {
         setActiveTab(tabId);
+    };
+
+    useEffect(() => {
+        const images = document.querySelectorAll('.flex-viewport img');
+        let maxImageHeight = 0;
+
+        images.forEach((img) => {
+            const imgHeight = img.clientHeight;
+            if (imgHeight > maxImageHeight) {
+                maxImageHeight = imgHeight;
+            }
+        });
+
+        setOlHeight(maxImageHeight);
+    }, [activeImage]);
+
+    const handleOverlayClick = (e) => {
+        if (e.target.classList.contains("modal")) {
+            setIsModalOpen(false);
+        }
     };
 
     return (
@@ -31,10 +57,10 @@ const Lqs = () => {
                                     <div className="woocommerce-notices-wrapper" />
                                     <div id="product-232" className="product type-product post-232 status-publish first instock product_cat-dental has-post-thumbnail shipping-taxable purchasable product-type-variable has-default-attributes">
                                         <div className="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns={4} style={{ opacity: 1, transition: 'opacity .25s ease-in-out' }}>
-                                            <div className="flex-viewport" style={{ overflow: 'hidden', position: 'relative', height: '640px' }}>
+                                            <div className="flex-viewport" style={{ overflow: 'hidden', position: 'relative', height: `${olHeight}px` }}>
                                                 <div className="woocommerce-product-gallery__wrapper" style={{ width: '800%', transitionDuration: '0s', transform: 'translate3d(0px, 0px, 0px)' }}>
-                                                    <div className="woocommerce-product-gallery__image" style={{ width: '640px', marginRight: '0px', float: 'left', display: 'block' }}>
-                                                        {activeImage === '/img/lqs.png' && (
+                                                    {activeImage === '/img/lqs.png' && (
+                                                        <div className={`woocommerce-product-gallery__image ${activeImage ? 'flex-active-slide' : ''}`} style={{ width: '640px', marginRight: '0px', float: 'left', display: 'block' }}>
                                                             <>
                                                                 <img
                                                                     width={600}
@@ -48,10 +74,10 @@ const Lqs = () => {
                                                                     <img width="600" height="600" src="/img/lqs.png" alt="" />
                                                                 </span>
                                                             </>
-                                                        )}
-                                                    </div>
-                                                    <div className="woocommerce-product-gallery__image" style={{ width: '640px', marginRight: '0px', float: 'left', display: 'block', position: 'relative', overflow: 'hidden' }}>
-                                                        {activeImage === '/img/lidocaine-video-thumbnail.png' && (
+                                                        </div>
+                                                    )}
+                                                    {activeImage === '/img/lidocaine-video-thumbnail.png' && (
+                                                        <div className={`woocommerce-product-gallery__image ${activeImage ? 'flex-active-slide' : ''}`} style={{ width: '640px', marginRight: '0px', float: 'left', display: 'block', position: 'relative', overflow: 'hidden' }}>
                                                             <>
                                                                 <img
                                                                     width={600}
@@ -61,17 +87,17 @@ const Lqs = () => {
                                                                     alt="Xylistrip Video"
                                                                     title="Xylitol Video Thumbnail"
                                                                 />
-                                                                <span className="wpcpv-item wpcpv-item-video" data-src="https://youtu.be/cwsvZL-eMU8">
-                                                                    <img width="600" height="600" src="/Lidocaine-Thumbnail.png" alt="" />
+                                                                <span className="wpcpv-item wpcpv-item-video my-class" data-src="https://youtu.be/cwsvZL-eMU8"  onClick={handleModal}>
+                                                                    <img width="899" height="600" src="/Lidocaine-Thumbnail.png" alt="" />
                                                                 </span>
                                                             </>
-                                                        )}
-                                                    </div>
+                                                        </div>
+                                                    )}
                                                 </div>
                                             </div>
                                             <ol className="flex-control-nav flex-control-thumbs">
                                                 {imagePaths.map((path, index) => (
-                                                    <li key={index}>
+                                                    <li key={index} className={path === '/img/lidocaine-video-thumbnail.png' ? 'wpcpv-thumb-video' : ''}>
                                                         <img
                                                             onLoad={(e) => {
                                                                 e.target.width = e.target.naturalWidth;
@@ -85,16 +111,55 @@ const Lqs = () => {
                                                             height={100}
                                                             onClick={() => handleImageClick(path)}
                                                         />
+                                                        {path === '/img/lidocaine-video-thumbnail.png' && (
+                                                            <span className="wpcpv-item wpcpv-item-video my-class" data-src="https://youtu.be/cwsvZL-eMU8">
+                                                                <img width="899" height="600" src='/img/lidocaine-video-thumbnail.png' alt="video" />
+                                                            </span>
+                                                        )}
                                                     </li>
                                                 ))}
-                                                {/* <li className="wpcpv-thumb-video">
-                                                    <img onLoad="this.width = this.naturalWidth; this.height = this.naturalHeight" src="/img/Xylitol-Video-Thumbnail.png" draggable="false" width={100} height={100} />
-                                                    <span className="wpcpv-item wpcpv-item-video my-class" data-src="https://youtu.be/cwsvZL-eMU8">
-                                                        <img width="899" height="600" src="/img/Xylitol-Video-Thumbnail.png" alt="" />
-                                                    </span>
-                                                </li> */}
                                             </ol>
                                         </div>
+                                        {isModalOpen && (
+                                            <div
+                                                className="modal fade show d-flex align-items-center"
+                                                tabIndex="-1"
+                                                onClick={handleOverlayClick}
+                                                style={{
+                                                    display: "block",
+                                                    backgroundColor: "rgba(0, 0, 0, 0.5)",
+                                                }}
+                                            >
+                                                <div
+                                                    className="modal-dialog modal-dialog-centered"
+                                                    onClick={(e) => e.stopPropagation()}
+                                                    style={{
+                                                        margin: "auto",
+                                                        minWidth: window.innerWidth > 800 ? "60%" : "100%",
+                                                    }}
+                                                >
+                                                    <div
+                                                        className="modal-content"
+                                                        style={{
+                                                            border: "none",
+                                                            background: "transparent",
+                                                            minHeight: "50vh",
+                                                        }}
+                                                    >
+                                                        <div className="modal-body">
+                                                            <div className="embed-responsive embed-responsive-16by9">
+                                                                <iframe
+                                                                    className="embed-responsive-item"
+                                                                    allowFullScreen
+                                                                    title="YouTube Video"
+                                                                    src="https://www.youtube.com/embed/cwsvZL-eMU8"
+                                                                ></iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        )}
                                         <div className="summary entry-summary">
                                             <h1 className="product_title entry-title">XyliStrip</h1>
 
@@ -125,7 +190,7 @@ const Lqs = () => {
                                                                 <label htmlFor="size">Size</label>
                                                             </th>
                                                             <td className="value">
-                                                                <select id="size" className name="attribute_size" data-attribute_name="attribute_size" data-show_option_none="yes">
+                                                                <select id="size" name="attribute_size" data-attribute_name="attribute_size" data-show_option_none="yes">
                                                                     <option value>Choose an option</option>
                                                                     <option value="28 per pack" defaultValue>28 per pack</option>
                                                                 </select>
@@ -139,7 +204,7 @@ const Lqs = () => {
                                                     <div className="woocommerce-variation-add-to-cart variations_button">
                                                         <div className="quantity">
                                                             <label className="screen-reader-text" htmlFor="quantity_65cf1bd15f617">XyliStrip quantity</label>
-                                                            <input type="number" id="quantity_65cf1bd15f617" className="input-text qty text" name="quantity" defaultValue={1} aria-label="Product quantity" size={4} min={1} max step={1} placeholder inputMode="numeric" autoComplete="off" />
+                                                            <input type="number" id="quantity_65cf1bd15f617" className="input-text qty text" name="quantity" defaultValue={1} aria-label="Product quantity" size={4} min={1} step={1} inputMode="numeric" autoComplete="off" />
                                                         </div>
                                                         <button type="submit" className="single_add_to_cart_button button alt">Add to cart</button>
                                                         <input type="hidden" name="add-to-cart" defaultValue={232} />
