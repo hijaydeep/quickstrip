@@ -8,7 +8,7 @@ const Header = () => {
     const pathname = usePathname();
 
     const [scrollPosition, setScrollPosition] = useState(0);
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
     const [isSidebarOpen, setSidebarOpen] = useState(false);
 
     useEffect(() => {
