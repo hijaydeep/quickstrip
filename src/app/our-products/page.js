@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import React from 'react';
+import Breadcrumb from '@/components/Breadcrumb';
+import Link from 'next/link';
 
 export const metadata = {
     title: "Products - QuickStrip Dental",
@@ -9,27 +10,7 @@ const page = () => {
 
     return (
         <>
-            <header id="site-title" className="page-title-section">
-                <div className="page-header aux-wrapper aux-auto-height aux-boxed-container aux-center aux-top aux-dark aux-arrow-none" style={{ display: 'block' }}>
-                    <div className="aux-container" >
-                        <p className="aux-breadcrumbs">
-                            <span className="aux-breadcrumb-sep breadcrumb-icon auxicon-chevron-right-1"></span>
-                            <span>
-                                <Link href="/">Home</Link>
-                            </span>
-                            <span className="aux-breadcrumb-sep breadcrumb-icon auxicon-chevron-right-1"></span>
-                            <span>Products</span>
-                        </p>
-                        <div className="aux-page-title-entry">
-                            <div className="aux-page-title-box">
-                                <section className="page-title-group" >
-                                    <h1 className="page-title">Products</h1>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
+            <Breadcrumb title="Products" item="Products" />
             <main id="main" className="aux-main aux-territory  aux-single aux-page aux-boxed-container aux-content-top-margin no-sidebar aux-sidebar-style-border aux-user-entry">
                 <div className="aux-wrapper">
                     <div className="aux-container aux-fold">

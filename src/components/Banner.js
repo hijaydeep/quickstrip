@@ -52,7 +52,7 @@ const Banner = () => {
                                                     <img
                                                         decoding="async" width="1295" height="277"
                                                         src="/img/banner_logo.png"
-                                                        class="attachment-full size-full wp-image-856" alt=""
+                                                        className="attachment-full size-full wp-image-856" alt=""
                                                         srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/MicrosoftTeams-image.png 1295w, https://quickstripdental.com/wp-content/uploads/2022/10/MicrosoftTeams-image-200x43.png 200w, https://quickstripdental.com/wp-content/uploads/2022/10/MicrosoftTeams-image-600x128.png 600w"
                                                         sizes="(max-width: 1295px) 100vw, 1295px" />
                                                 </div>

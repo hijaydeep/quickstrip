@@ -3818,11 +3818,6 @@ right: 270px !important;
     margin-top: 0px !important;
 }
 
-.woocommerce .products ul,
-.woocommerce ul.products {
-    margin-left: 300px;
-}
-
 @media only screen and (max-width: 768px) {
 
     .woocommerce .products ul,
@@ -3831,10 +3826,32 @@ right: 270px !important;
     }
 }
 
-/*End*/
-/*
-@media only screen and (min-width: 600px){	.woocommerce .products ul, .woocommerce ul.products{margin-left:0px;}}
-*/
+@media only screen and (min-width: 600px) {
+
+    .woocommerce .products ul,
+    .woocommerce ul.products {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    .woocommerce .products ul,
+    .woocommerce ul.products {
+        margin-left: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .woocommerce ul.products[class*=columns-] li.product,
+    .woocommerce-page ul.products[class*=columns-] li.product {
+        width: 48%;
+        float: left;
+        clear: both;
+        margin: 0 0 2.992em;
+    }
+}
 
 @media screen and (max-width: 503px) {
 
@@ -6026,27 +6043,6 @@ h1.entry-title {
 
 .eicon-animation-spin {
     animation: eicon-spin 2s linear infinite
-}
-
-.elementor-section {
-    position: relative
-}
-
-.elementor-section .elementor-container {
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative
-}
-
-@media (max-width: 1024px) {
-    .elementor-section .elementor-container {
-        flex-wrap: wrap
-    }
-}
-
-.elementor-section.elementor-section-boxed>.elementor-container {
-    max-width: 1140px
 }
 
 .elementor-section.elementor-section-stretched {
@@ -9171,6 +9167,6 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {
     cursor: pointer
 }
 
-ul {
-    list-style: disc;
+.woocommerce-product-gallery {
+    opacity: 1 !important;
 }

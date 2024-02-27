@@ -48,7 +48,9 @@ const Header = () => {
             <header className={`aux-elementor-header ${scrollPosition > 0 ? 'aux-sticky' : ''}`} id="site-elementor-header" itemScope="itemscope" itemType="https://schema.org/WPHeader" data-sticky-height={80}
                 style={{
                     transition: 'all 0.4s ease-in-out',
-                    behavior: 'smooth'
+                    behavior: 'smooth',
+                    height: scrollPosition ? '77px' : '',
+                    top: scrollPosition ? 0 : '',
                 }}>
                 <div className="aux-wrapper">
                     <div className="aux-header aux-header-elements-wrapper">
@@ -88,7 +90,7 @@ const Header = () => {
                                                             </div>
                                                         </div>
                                                         {windowWidth >= 768 ? (
-                                                            <>
+                                                            <div>
                                                                 <nav id="master-menu-elementor-c63e02d" className="menu-main-menu-container">
                                                                     <ul id="menu-main-menu" className="aux-master-menu aux-no-js aux-skin-classic aux-with-indicator aux-with-splitter aux-horizontal" data-type="horizontal" data-switch-type="toggle" data-switch-parent=".elementor-element-c63e02d .aux-fs-popup .aux-fs-menu" data-switch-width={768}>
                                                                         <li id="menu-item-107" className={pathname === "/" ? "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-105 current_page_item menu-item-107 aux-menu-depth-0 aux-menu-root-1 aux-menu-item" : "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-107 aux-menu-depth-0 aux-menu-root-1 aux-menu-item aux-hover"}>
@@ -116,7 +118,7 @@ const Header = () => {
                                                                         </li>
                                                                     </ul>
                                                                 </nav>
-                                                            </>
+                                                            </div>
                                                         ) : (
                                                             <section className="aux-fs-popup aux-fs-menu-layout-center aux-indicator" style={{ opacity: isSidebarOpen ? 1 : 0, transform: isSidebarOpen ? 'none' : 'perspective(200px) translateZ(30px)', display: isSidebarOpen ? 'block' : 'none' }}>
                                                                 <div className="aux-panel-close" onClick={toggleSidebar}>
@@ -125,22 +127,22 @@ const Header = () => {
                                                                 <div className="aux-fs-menu" data-menu-title />
                                                                 <div className="aux-fs-menu">
                                                                     <ul id="menu-main-menu" className="aux-master-menu aux-skin-classic aux-with-indicator aux-with-splitter aux-toggle aux-narrow" data-type="horizontal" data-switch-type="toggle" data-switch-parent=".elementor-element-c63e02d .aux-fs-popup .aux-fs-menu" data-switch-width={768}>
-                                                                        <li id="menu-item-107" className="a1i0s0 menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-105 current_page_item menu-item-107 aux-menu-depth-0 aux-menu-root-1 aux-menu-item">
+                                                                        <li id="menu-item-107" className={pathname === "/" ? "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-105 current_page_item menu-item-107 aux-menu-depth-0 aux-menu-root-1 aux-menu-item" : "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-107 aux-menu-depth-0 aux-menu-root-1 aux-menu-item aux-hover"}>
                                                                             <Link href="/" className="aux-item-content" onClick={handleLinkClick}>
                                                                                 <span className="aux-menu-label">Home</span>
                                                                             </Link>
                                                                         </li>
-                                                                        <li id="menu-item-1260" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1260 aux-menu-depth-0 aux-menu-root-2 aux-menu-item">
+                                                                        <li id="menu-item-1260" className={pathname === "/our-products" ? "menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1233 current_page_item menu-item-1260 aux-menu-depth-0 aux-menu-root-2 aux-menu-item" : "menu-item menu-item-type-post_type menu-item-object-page menu-item-1260 aux-menu-depth-0 aux-menu-root-2 aux-menu-item aux-hover"}>
                                                                             <Link href="/our-products" className="aux-item-content" onClick={handleLinkClick}>
                                                                                 <span className="aux-menu-label">Products</span>
                                                                             </Link>
                                                                         </li>
-                                                                        <li id="menu-item-109" className="a1i0s0 menu-item menu-item-type-post_type menu-item-object-page menu-item-109 aux-menu-depth-0 aux-menu-root-3 aux-menu-item">
+                                                                        <li id="menu-item-109" className={pathname === "/about-us" ? "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-85 current_page_item menu-item-109 aux-menu-depth-0 aux-menu-root-3 aux-menu-item" : "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page menu-item-109 aux-menu-depth-0 aux-menu-root-3 aux-menu-item aux-hover"}>
                                                                             <Link href="/about-us" className="aux-item-content" onClick={handleLinkClick}>
                                                                                 <span className="aux-menu-label">About Us</span>
                                                                             </Link>
                                                                         </li>
-                                                                        <li id="menu-item-111" className="a1i0s0 menu-item menu-item-type-post_type menu-item-object-page menu-item-111 aux-menu-depth-0 aux-menu-root-4 aux-menu-item">
+                                                                        <li id="menu-item-111" className={pathname === "/contact-us" ? "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-84 current_page_item menu-item-111 aux-menu-depth-0 aux-menu-root-4 aux-menu-item" : "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page menu-item-111 aux-menu-depth-0 aux-menu-root-4 aux-menu-item aux-hover"}>
                                                                             <Link href="/contact-us" className="aux-item-content" onClick={handleLinkClick}>
                                                                                 <span className="aux-menu-label">Contact Us</span>
                                                                             </Link>
@@ -152,6 +154,10 @@ const Header = () => {
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div className="aux-parallax-section elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-73bdf93" data-id="73bdf93" data-element_type="column">
+                                        <div className="elementor-widget-wrap">
                                         </div>
                                     </div>
                                 </div>

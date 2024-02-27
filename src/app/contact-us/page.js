@@ -1,3 +1,4 @@
+import Breadcrumb from '@/components/Breadcrumb';
 import Link from 'next/link';
 import React from 'react';
 
@@ -9,27 +10,7 @@ const page = () => {
 
     return (
         <>
-            <header id="site-title" class="page-title-section">
-                <div class="page-header aux-wrapper aux-auto-height aux-boxed-container aux-center aux-top aux-dark aux-arrow-none" style={{ display: 'block' }}>
-                    <div class="aux-container" >
-                        <p class="aux-breadcrumbs">
-                            <span class="aux-breadcrumb-sep breadcrumb-icon auxicon-chevron-right-1"></span>
-                            <span>
-                                <Link href="/">Home</Link>
-                            </span>
-                            <span class="aux-breadcrumb-sep breadcrumb-icon auxicon-chevron-right-1"></span>
-                            <span>Contact Us</span>
-                        </p>
-                        <div class="aux-page-title-entry">
-                            <div class="aux-page-title-box">
-                                <section class="page-title-group" >
-                                    <h1 class="page-title">Contact Us</h1>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
+            <Breadcrumb title="Contact Us" item="Contact Us" />
             <main id="main" className="aux-main aux-territory  aux-single aux-page aux-full-container no-sidebar aux-sidebar-style-border aux-user-entry">
                 <div className="aux-wrapper">
                     <div className="aux-container aux-fold">

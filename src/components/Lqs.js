@@ -11,8 +11,37 @@ const Lqs = () => {
 
     const [activeImage, setActiveImage] = useState(imagePaths[0]);
     const [activeTab, setActiveTab] = useState('1');
-    const [olHeight, setOlHeight] = useState(640);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [viewportHeight, setViewportHeight] = useState('640px');
+    const [imageWidth, setImageWidth] = useState('640px');
+
+    useEffect(() => {
+        const baseHeight = 347.188;
+        const baseWidth = 347.188;
+
+        const handleResize = () => {
+            let newHeight, newWidth;
+
+            if (window.innerWidth < 938) {
+                newHeight = `calc(100vw - 70px)`;
+                newWidth = `calc(100vw - 70px)`;
+            } else {
+                newHeight = `calc(${baseHeight + 0.396 * (window.innerWidth - 938)}px)`;
+                newWidth = `calc(${baseWidth + 0.396 * (window.innerWidth - 938)}px)`;
+            }
+
+            setViewportHeight(newHeight);
+            setImageWidth(newWidth);
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const handleImageClick = (path) => {
         setActiveImage(path);
@@ -25,20 +54,6 @@ const Lqs = () => {
     const handleTabClick = (tabId) => {
         setActiveTab(tabId);
     };
-
-    useEffect(() => {
-        const images = document.querySelectorAll('.flex-viewport img');
-        let maxImageHeight = 0;
-
-        images.forEach((img) => {
-            const imgHeight = img.clientHeight;
-            if (imgHeight > maxImageHeight) {
-                maxImageHeight = imgHeight;
-            }
-        });
-
-        setOlHeight(maxImageHeight);
-    }, [activeImage]);
 
     const handleOverlayClick = (e) => {
         if (e.target.classList.contains("modal")) {
@@ -57,10 +72,10 @@ const Lqs = () => {
                                     <div className="woocommerce-notices-wrapper" />
                                     <div id="product-232" className="product type-product post-232 status-publish first instock product_cat-dental has-post-thumbnail shipping-taxable purchasable product-type-variable has-default-attributes">
                                         <div className="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns={4} style={{ opacity: 1, transition: 'opacity .25s ease-in-out' }}>
-                                            <div className="flex-viewport" style={{ overflow: 'hidden', position: 'relative', height: `${olHeight}px` }}>
+                                            <div className="flex-viewport" style={{ overflow: 'hidden', position: 'relative', height: viewportHeight }}>
                                                 <div className="woocommerce-product-gallery__wrapper" style={{ width: '800%', transitionDuration: '0s', transform: 'translate3d(0px, 0px, 0px)' }}>
                                                     {activeImage === '/img/lqs.png' && (
-                                                        <div className={`woocommerce-product-gallery__image ${activeImage ? 'flex-active-slide' : ''}`} style={{ width: '640px', marginRight: '0px', float: 'left', display: 'block' }}>
+                                                        <div className={`woocommerce-product-gallery__image ${activeImage ? 'flex-active-slide' : ''}`} style={{ width: imageWidth, marginRight: '0px', float: 'left', display: 'block' }}>
                                                             <>
                                                                 <img
                                                                     width={600}
@@ -71,13 +86,23 @@ const Lqs = () => {
                                                                     title="Quickstrip Xylistrip"
                                                                 />
                                                                 <span className="wpcpv-item wpcpv-item-image">
-                                                                    <img width="600" height="600" src="/img/lqs.png" alt="" />
+                                                                    <img width="600" height="600" src="/img/lqs.png" alt="" className='zoomImg' style={{
+                                                                        position: activeImage ? 'absolute' : '',
+                                                                        top: activeImage ? '0px' : '',
+                                                                        left: activeImage ? '0px' : '',
+                                                                        opacity: activeImage ? '0' : '',
+                                                                        width: activeImage ? '600px' : '',
+                                                                        height: activeImage ? '600px' : '',
+                                                                        border: activeImage ? 'none' : '',
+                                                                        maxWidth: activeImage ? 'none' : '',
+                                                                        maxHeight: activeImage ? 'none' : '',
+                                                                    }} />
                                                                 </span>
                                                             </>
                                                         </div>
                                                     )}
                                                     {activeImage === '/img/lidocaine-video-thumbnail.png' && (
-                                                        <div className={`woocommerce-product-gallery__image ${activeImage ? 'flex-active-slide' : ''}`} style={{ width: '640px', marginRight: '0px', float: 'left', display: 'block', position: 'relative', overflow: 'hidden' }}>
+                                                        <div className={`woocommerce-product-gallery__image ${activeImage ? 'flex-active-slide' : ''}`} style={{ width: imageWidth, marginRight: '0px', float: 'left', display: 'block', position: 'relative', overflow: 'hidden' }}>
                                                             <>
                                                                 <img
                                                                     width={600}
@@ -87,8 +112,18 @@ const Lqs = () => {
                                                                     alt="Xylistrip Video"
                                                                     title="Xylitol Video Thumbnail"
                                                                 />
-                                                                <span className="wpcpv-item wpcpv-item-video my-class" data-src="https://youtu.be/cwsvZL-eMU8"  onClick={handleModal}>
-                                                                    <img width="899" height="600" src="/Lidocaine-Thumbnail.png" alt="" />
+                                                                <span className="wpcpv-item wpcpv-item-video my-class" data-src="https://youtu.be/cwsvZL-eMU8" onClick={handleModal}>
+                                                                    <img width="899" height="600" src="/Lidocaine-Thumbnail.png" alt="" className='zoomImg' style={{
+                                                                        position: activeImage ? 'absolute' : '',
+                                                                        top: activeImage ? '0px' : '',
+                                                                        left: activeImage ? '0px' : '',
+                                                                        opacity: activeImage ? '0' : '',
+                                                                        width: activeImage ? '899' : '',
+                                                                        height: activeImage ? '600px' : '',
+                                                                        border: activeImage ? 'none' : '',
+                                                                        maxWidth: activeImage ? 'none' : '',
+                                                                        maxHeight: activeImage ? 'none' : '',
+                                                                    }} />
                                                                 </span>
                                                             </>
                                                         </div>

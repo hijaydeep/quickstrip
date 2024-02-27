@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata = {
     title: "About Us - QuickStrip Dental",
@@ -10,27 +11,7 @@ const page = () => {
     return (
         <>
 
-            <header id="site-title" className="page-title-section">
-                <div className="page-header aux-wrapper aux-auto-height aux-boxed-container aux-center aux-top aux-dark aux-arrow-none" style={{ display: 'block' }}>
-                    <div className="aux-container">
-                        <p className="aux-breadcrumbs">
-                            <span className="aux-breadcrumb-sep breadcrumb-icon auxicon-chevron-right-1" />
-                            <span>
-                                <Link href="/">Home</Link>
-                            </span>
-                            <span className="aux-breadcrumb-sep breadcrumb-icon auxicon-chevron-right-1" />
-                            <span>About Us</span>
-                        </p>
-                        <div className="aux-page-title-entry">
-                            <div className="aux-page-title-box">
-                                <section className="page-title-group">
-                                    <h1 className="page-title">About Us</h1>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
+            <Breadcrumb title="About Us" item="About Us" />
             <main id="main" className="aux-main aux-territory  aux-single aux-page aux-full-container no-sidebar aux-sidebar-style-border aux-user-entry">
                 <div className="aux-wrapper">
                     <div className="aux-container aux-fold">
@@ -55,7 +36,7 @@ const page = () => {
                                                         </div>
                                                         <div className="elementor-element elementor-element-4764bc2 elementor-widget elementor-widget-image" data-id="4764bc2" data-element_type="widget" data-widget_type="image.default">
                                                             <div className="elementor-widget-container">
-                                                                <img decoding="async" width="421" height="322" src="/img/skycare.png" class="attachment-full size-full wp-image-885" alt="" srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/rdt-34-1.png 421w, https://quickstripdental.com/wp-content/uploads/2022/10/rdt-34-1-200x153.png 200w" sizes="(max-width: 421px) 100vw, 421px" />
+                                                                <img decoding="async" width="421" height="322" src="/img/skycare.png" className="attachment-full size-full wp-image-885" alt="" srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/rdt-34-1.png 421w, https://quickstripdental.com/wp-content/uploads/2022/10/rdt-34-1-200x153.png 200w" sizes="(max-width: 421px) 100vw, 421px" />
                                                             </div>
                                                         </div>
                                                         <div className="elementor-element elementor-element-6eafd32 aux-appear-watch-animation aux-fade-in-up aux-animated elementor-widget elementor-widget-aux_modern_heading" data-id="6eafd32" data-element_type="widget" data-widget_type="aux_modern_heading.default">
@@ -95,7 +76,7 @@ const page = () => {
                                                     <div className="elementor-widget-wrap elementor-element-populated">
                                                         <div className="elementor-element elementor-element-813e103 elementor-widget elementor-widget-image" data-id="813e103" data-element_type="widget" data-widget_type="image.default">
                                                             <div className="elementor-widget-container">
-                                                                <img decoding="async" width="450" height="317" src="/img/skycare.png" class="attachment-full size-full wp-image-884" alt="" srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/skycare-1.png 450w, https://quickstripdental.com/wp-content/uploads/2022/10/skycare-1-200x141.png 200w" sizes="(max-width: 450px) 100vw, 450px" />
+                                                                <img decoding="async" width="450" height="317" src="/img/skycare.png" className="attachment-full size-full wp-image-884" alt="" srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/skycare-1.png 450w, https://quickstripdental.com/wp-content/uploads/2022/10/skycare-1-200x141.png 200w" sizes="(max-width: 450px) 100vw, 450px" />
                                                             </div>
                                                         </div>
                                                         <div className="elementor-element elementor-element-db69385 aux-appear-watch-animation aux-fade-in-up aux-animated elementor-widget elementor-widget-aux_modern_heading" data-id="db69385" data-element_type="widget" data-widget_type="aux_modern_heading.default">
