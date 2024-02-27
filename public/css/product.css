@@ -1371,9 +1371,9 @@ p.demo_store a {
     clear: left
 }
 
-.woocommerce div.product div.summary {
+/* .woocommerce div.product div.summary {
     margin-bottom: 2em
-}
+} */
 
 .woocommerce div.product div.social {
     text-align: right;
