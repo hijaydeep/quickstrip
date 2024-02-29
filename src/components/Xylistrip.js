@@ -20,30 +20,30 @@ const Xylistrip = () => {
     useEffect(() => {
         const baseHeight = 347.188;
         const baseWidth = 347.188;
-    
+
         const handleResize = () => {
-          let newHeight, newWidth;
-    
-          if (window.innerWidth < 938) {
-            newHeight = `calc(100vw - 70px)`;
-            newWidth = `calc(100vw - 70px)`;
-          } else {
-            newHeight = `calc(${baseHeight + 0.396 * (window.innerWidth - 938)}px)`;
-            newWidth = `calc(${baseWidth + 0.396 * (window.innerWidth - 938)}px)`;
-          }
-    
-          setViewportHeight(newHeight);
-          setImageWidth(newWidth);
+            let newHeight, newWidth;
+
+            if (window.innerWidth < 938) {
+                newHeight = `calc(100vw - 70px)`;
+                newWidth = `calc(100vw - 70px)`;
+            } else {
+                newHeight = `calc(${baseHeight + 0.396 * (window.innerWidth - 938)}px)`;
+                newWidth = `calc(${baseWidth + 0.396 * (window.innerWidth - 938)}px)`;
+            }
+
+            setViewportHeight(newHeight);
+            setImageWidth(newWidth);
         };
-    
+
         handleResize();
-    
+
         window.addEventListener('resize', handleResize);
-    
+
         return () => {
-          window.removeEventListener('resize', handleResize);
+            window.removeEventListener('resize', handleResize);
         };
-      }, []);
+    }, []);
 
     const handleImageClick = (path) => {
         setActiveImage(path);
@@ -83,22 +83,12 @@ const Xylistrip = () => {
                                                                     width={600}
                                                                     height={600}
                                                                     src="/img/xylitol.png"
-                                                                    className="wp-post-image img-fluid"
+                                                                    className="wp-post-image"
                                                                     alt="Xylistrip"
                                                                     title="Quickstrip Xylistrip"
                                                                 />
                                                                 <span className="wpcpv-item wpcpv-item-image">
-                                                                    <img width="600" height="600" src="/img/xylitol.png" alt="" className='zoomImg' style={{
-                                                                        position: activeImage ? 'absolute' : '',
-                                                                        top: activeImage ? '0px' : '',
-                                                                        left: activeImage ? '0px' : '',
-                                                                        opacity: activeImage ? '0' : '',
-                                                                        width: activeImage ? '600px' : '',
-                                                                        height: activeImage ? '600px' : '',
-                                                                        border: activeImage ? 'none' : '',
-                                                                        maxWidth: activeImage ? 'none' : '',
-                                                                        maxHeight: activeImage ? 'none' : '',
-                                                                    }} />
+                                                                    <img width="600" height="600" src="/img/xylitol.png" alt="" />
                                                                 </span>
                                                             </>
                                                         </div>
@@ -115,17 +105,7 @@ const Xylistrip = () => {
                                                                     title="xylitol-front"
                                                                 />
                                                                 <span className="wpcpv-item wpcpv-item-image">
-                                                                    <img width="600" height="600" src="/img/xylitol-front.png" className='zoomImg' alt="" style={{
-                                                                        position: activeImage ? 'absolute' : '',
-                                                                        top: activeImage ? '0px' : '',
-                                                                        left: activeImage ? '0px' : '',
-                                                                        opacity: activeImage ? '0' : '',
-                                                                        width: activeImage ? '600px' : '',
-                                                                        height: activeImage ? '600px' : '',
-                                                                        border: activeImage ? 'none' : '',
-                                                                        maxWidth: activeImage ? 'none' : '',
-                                                                        maxHeight: activeImage ? 'none' : '',
-                                                                    }} />
+                                                                    <img width="600" height="600" src="/img/xylitol-front.png" className='zoomImg' alt="" />
                                                                 </span>
                                                             </>
                                                         </div>
@@ -142,17 +122,7 @@ const Xylistrip = () => {
                                                                     title="xylitol-back"
                                                                 />
                                                                 <span className="wpcpv-item wpcpv-item-image">
-                                                                    <img width="600" height="600" src="/img/xylitol-back.png" className='zoomImg' alt="" style={{
-                                                                        position: activeImage ? 'absolute' : '',
-                                                                        top: activeImage ? '0px' : '',
-                                                                        left: activeImage ? '0px' : '',
-                                                                        opacity: activeImage ? '0' : '',
-                                                                        width: activeImage ? '600px' : '',
-                                                                        height: activeImage ? '600px' : '',
-                                                                        border: activeImage ? 'none' : '',
-                                                                        maxWidth: activeImage ? 'none' : '',
-                                                                        maxHeight: activeImage ? 'none' : '',
-                                                                    }} />
+                                                                    <img width="600" height="600" src="/img/xylitol-back.png" className='zoomImg' alt="" />
                                                                 </span>
                                                             </>
                                                         </div>
@@ -169,17 +139,7 @@ const Xylistrip = () => {
                                                                     title="Xylitol Video Thumbnail"
                                                                 />
                                                                 <span className="wpcpv-item wpcpv-item-video my-class" data-src="https://youtu.be/cwsvZL-eMU8" onClick={handleModal}>
-                                                                    <img width="899" height="600" src="/Xylitol-Thumbnail.png" className='zoomImg' alt="" style={{
-                                                                        position: activeImage ? 'absolute' : '',
-                                                                        top: activeImage ? '0px' : '',
-                                                                        left: activeImage ? '0px' : '',
-                                                                        opacity: activeImage ? '0' : '',
-                                                                        width: activeImage ? '899' : '',
-                                                                        height: activeImage ? '600px' : '',
-                                                                        border: activeImage ? 'none' : '',
-                                                                        maxWidth: activeImage ? 'none' : '',
-                                                                        maxHeight: activeImage ? 'none' : '',
-                                                                    }} />
+                                                                    <img width="899" height="600" src="/Xylitol-Thumbnail.png" className='zoomImg' alt="" />
                                                                 </span>
                                                             </>
                                                         </div>
@@ -270,7 +230,7 @@ const Xylistrip = () => {
                                                     <li>Helps reduce the incidence of cavities</li>
                                                 </ul>
                                                 <p style={{ overflow: 'visible' }}>
-                                                    <Link href="" id="btn-add-to-cart" rel="noopener">Buy Now</Link>
+                                                    <Link href="https://www.henryschein.ca/ca-en/Shopping/Products.aspx?productid=9401174,9401175" id="btn-add-to-cart" rel="noopener">Buy Now</Link>
                                                 </p>
                                             </div>
                                             <form className="variations_form cart" action="https://quickstripdental.com/product/xylistrip/" method="post" encType="multipart/form-data" data-product_id={232}>
@@ -400,10 +360,10 @@ const Xylistrip = () => {
                                             <h2>Related products</h2>
                                             <ul className="products columns-4">
                                                 <li className="product type-product post-274 status-publish first instock product_cat-dental has-post-thumbnail shipping-taxable purchasable product-type-variable has-default-attributes">
-                                                    <Link href="product/lqs-lidocaine" className="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                    <Link href="lqs-lidocaine" className="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                                                         <img width="300" height="300" src="/img/lqs.png" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Lidocaine" decoding="async" sizes="(max-width: 300px) 100vw, 300px" />
                                                     </Link>
-                                                    <Link href="product/lqs-lidocaine">
+                                                    <Link href="lqs-lidocaine">
                                                         <h2 className="woocommerce-loop-product__title">LQS – Lidocaine</h2>
                                                     </Link>
                                                     <span className="price">
@@ -411,7 +371,7 @@ const Xylistrip = () => {
                                                             <span className="woocommerce-Price-currencySymbol">$</span>269.00</bdi>
                                                         </span>
                                                     </span>
-                                                    <Link href="product/lqs-lidocaine" data-quantity={1} className="button product_type_variable add_to_cart_button" data-product_id={274} data-product_sku aria-label="Select options for “LQS - Lidocaine”" aria-describedby="This product has multiple variants. The options may be chosen on the product page" rel="nofollow" data-product-type="variable" data-verify_nonce="76f6e55753">Select options</Link>
+                                                    <Link href="lqs-lidocaine" data-quantity={1} className="button product_type_variable add_to_cart_button" data-product_id={274} data-product_sku aria-label="Select options for “LQS - Lidocaine”" aria-describedby="This product has multiple variants. The options may be chosen on the product page" rel="nofollow" data-product-type="variable" data-verify_nonce="76f6e55753">Select options</Link>
                                                 </li>
                                             </ul>
                                         </section>

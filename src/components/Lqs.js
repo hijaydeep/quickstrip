@@ -86,17 +86,7 @@ const Lqs = () => {
                                                                     title="Quickstrip Xylistrip"
                                                                 />
                                                                 <span className="wpcpv-item wpcpv-item-image">
-                                                                    <img width="600" height="600" src="/img/lqs.png" alt="" className='zoomImg' style={{
-                                                                        position: activeImage ? 'absolute' : '',
-                                                                        top: activeImage ? '0px' : '',
-                                                                        left: activeImage ? '0px' : '',
-                                                                        opacity: activeImage ? '0' : '',
-                                                                        width: activeImage ? '600px' : '',
-                                                                        height: activeImage ? '600px' : '',
-                                                                        border: activeImage ? 'none' : '',
-                                                                        maxWidth: activeImage ? 'none' : '',
-                                                                        maxHeight: activeImage ? 'none' : '',
-                                                                    }} />
+                                                                    <img width="600" height="600" src="/img/lqs.png" alt="" />
                                                                 </span>
                                                             </>
                                                         </div>
@@ -113,17 +103,7 @@ const Lqs = () => {
                                                                     title="Xylitol Video Thumbnail"
                                                                 />
                                                                 <span className="wpcpv-item wpcpv-item-video my-class" data-src="https://youtu.be/cwsvZL-eMU8" onClick={handleModal}>
-                                                                    <img width="899" height="600" src="/Lidocaine-Thumbnail.png" alt="" className='zoomImg' style={{
-                                                                        position: activeImage ? 'absolute' : '',
-                                                                        top: activeImage ? '0px' : '',
-                                                                        left: activeImage ? '0px' : '',
-                                                                        opacity: activeImage ? '0' : '',
-                                                                        width: activeImage ? '899' : '',
-                                                                        height: activeImage ? '600px' : '',
-                                                                        border: activeImage ? 'none' : '',
-                                                                        maxWidth: activeImage ? 'none' : '',
-                                                                        maxHeight: activeImage ? 'none' : '',
-                                                                    }} />
+                                                                    <img width="899" height="600" src="/Lidocaine-Thumbnail.png" alt="" />
                                                                 </span>
                                                             </>
                                                         </div>
@@ -214,7 +194,7 @@ const Lqs = () => {
                                                     <li>Helps reduce the incidence of cavities</li>
                                                 </ul>
                                                 <p style={{ overflow: 'visible' }}>
-                                                    <Link href="" id="btn-add-to-cart" target="_blank" rel="noopener">Buy Now</Link>
+                                                    <Link href="https://www.henryschein.ca/ca-en/Shopping/Products.aspx?productid=9401174,9401175" id="btn-add-to-cart" target="_blank" rel="noopener">Buy Now</Link>
                                                 </p>
                                             </div>
                                             <form className="variations_form cart" action="https://quickstripdental.com/product/xylistrip/" method="post" encType="multipart/form-data" data-product_id={232}>
@@ -344,10 +324,10 @@ const Lqs = () => {
                                             <h2>Related products</h2>
                                             <ul className="products columns-4">
                                                 <li className="product type-product post-232 status-publish first instock product_cat-dental has-post-thumbnail shipping-taxable purchasable product-type-variable has-default-attributes">
-                                                    <Link href="product/xylistrip" className="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                    <Link href="xylistrip" className="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                                                         <img width="300" height="300" src="/img/xylitol.png" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Lidocaine" decoding="async" />
                                                     </Link>
-                                                    <Link href="product/xylistrip">
+                                                    <Link href="xylistrip">
                                                         <h2 className="woocommerce-loop-product__title">XyliStrip</h2>
                                                     </Link>
                                                     <span className="price">
@@ -355,7 +335,7 @@ const Lqs = () => {
                                                             <span className="woocommerce-Price-currencySymbol">$</span>25.00</bdi>
                                                         </span>
                                                     </span>
-                                                    <Link href="product/xylistrip" data-quantity={1} className="button product_type_variable add_to_cart_button" data-product_id={274} data-product_sku aria-label="Select options for “LQS - Lidocaine”" aria-describedby="This product has multiple variants. The options may be chosen on the product page" rel="nofollow" data-product-type="variable" data-verify_nonce="76f6e55753">Select options</Link>
+                                                    <Link href="xylistrip" data-quantity={1} className="button product_type_variable add_to_cart_button" data-product_id={274} data-product_sku aria-label="Select options for “LQS - Lidocaine”" aria-describedby="This product has multiple variants. The options may be chosen on the product page" rel="nofollow" data-product-type="variable" data-verify_nonce="76f6e55753">Select options</Link>
                                                 </li>
                                             </ul>
                                         </section>

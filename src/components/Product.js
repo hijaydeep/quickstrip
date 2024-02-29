@@ -19,7 +19,7 @@ const Product = () => {
                                                         <div className="elementor-element elementor-element-4133d7f e-con-full e-flex e-con e-child" data-id="4133d7f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
                                                             <div className="elementor-element elementor-element-880aca1 elementor-widget elementor-widget-image" data-id="880aca1" data-element_type="widget" data-widget_type="image.default">
                                                                 <div className="elementor-widget-container">
-                                                                    <Link href="/product/xylistrip">
+                                                                    <Link href="product/xylistrip">
                                                                         <img decoding="async" width="600" height="600" src="/img/xylitol.png" className="attachment-full size-full wp-image-1336" alt="Xylistrip" srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product.webp 600w, https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product-300x300.webp 300w, https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product-150x150.webp 150w, https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product-200x200.webp 200w, https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product-100x100.webp 100w, https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product-90x90.webp 90w" sizes="(max-width: 600px) 100vw, 600px" />
                                                                     </Link>
                                                                 </div>
@@ -27,21 +27,21 @@ const Product = () => {
                                                             <div className="elementor-element elementor-element-4a38070 elementor-widget elementor-widget-heading" data-id="4a38070" data-element_type="widget" data-widget_type="heading.default">
                                                                 <div className="elementor-widget-container">
                                                                     <h2 className="elementor-heading-title elementor-size-default">
-                                                                        <Link href="/product/xylistrip">XyliStrip</Link>
+                                                                        <Link href="product/xylistrip">XyliStrip</Link>
                                                                     </h2>
                                                                 </div>
                                                             </div>
                                                             <div className="elementor-element elementor-element-989224b elementor-widget elementor-widget-heading" data-id="989224b" data-element_type="widget" data-widget_type="heading.default">
                                                                 <div className="elementor-widget-container">
                                                                     <h6 className="elementor-heading-title elementor-size-default">
-                                                                        <Link href="/product/xylistrip">Sizes:</Link>
+                                                                        <Link href="product/xylistrip">Sizes:</Link>
                                                                     </h6>
                                                                 </div>
                                                             </div>
                                                             <div className="elementor-element elementor-element-8daf48b elementor-widget elementor-widget-heading" data-id="8daf48b" data-element_type="widget" data-widget_type="heading.default">
                                                                 <div className="elementor-widget-container">
                                                                     <h6 className="elementor-heading-title elementor-size-default">
-                                                                        <Link href="/product/xylistrip">28 per pack</Link>
+                                                                        <Link href="product/xylistrip">28 per pack</Link>
                                                                     </h6>
                                                                 </div>
                                                             </div>
@@ -60,7 +60,7 @@ const Product = () => {
                                                         <div className="elementor-element elementor-element-20bb053 e-con-full e-flex e-con e-child" data-id="20bb053" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
                                                             <div className="elementor-element elementor-element-9b7b41f elementor-widget elementor-widget-image" data-id="9b7b41f" data-element_type="widget" data-widget_type="image.default">
                                                                 <div className="elementor-widget-container">
-                                                                    <Link href="/product/lqs-lidocaine">
+                                                                    <Link href="product/lqs-lidocaine">
                                                                         <img decoding="async" width="600" height="600" src="/img/lqs.png" className="attachment-full size-full wp-image-1337" alt="Lidocaine" srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/Lidocaine-1.webp 600w, https://quickstripdental.com/wp-content/uploads/2022/10/Lidocaine-1-300x300.webp 300w, https://quickstripdental.com/wp-content/uploads/2022/10/Lidocaine-1-150x150.webp 150w, https://quickstripdental.com/wp-content/uploads/2022/10/Lidocaine-1-200x200.webp 200w, https://quickstripdental.com/wp-content/uploads/2022/10/Lidocaine-1-100x100.webp 100w, https://quickstripdental.com/wp-content/uploads/2022/10/Lidocaine-1-90x90.webp 90w" sizes="(max-width: 600px) 100vw, 600px" />
                                                                     </Link>
                                                                 </div>
@@ -68,21 +68,21 @@ const Product = () => {
                                                             <div className="elementor-element elementor-element-7dd38ed elementor-widget elementor-widget-heading" data-id="7dd38ed" data-element_type="widget" data-widget_type="heading.default">
                                                                 <div className="elementor-widget-container">
                                                                     <h2 className="elementor-heading-title elementor-size-default">
-                                                                        <Link href="/product/lqs-lidocaine">LQS – Lidocaine</Link>
+                                                                        <Link href="product/lqs-lidocaine">LQS – Lidocaine</Link>
                                                                     </h2>
                                                                 </div>
                                                             </div>
                                                             <div className="elementor-element elementor-element-f63aab6 elementor-widget elementor-widget-heading" data-id="f63aab6" data-element_type="widget" data-widget_type="heading.default">
                                                                 <div className="elementor-widget-container">
                                                                     <h6 className="elementor-heading-title elementor-size-default">
-                                                                        <Link href="/product/lqs-lidocaine">Sizes:</Link>
+                                                                        <Link href="product/lqs-lidocaine">Sizes:</Link>
                                                                     </h6>
                                                                 </div>
                                                             </div>
                                                             <div className="elementor-element elementor-element-57e0c08 elementor-widget elementor-widget-heading" data-id="57e0c08" data-element_type="widget" data-widget_type="heading.default">
                                                                 <div className="elementor-widget-container">
                                                                     <h6 className="elementor-heading-title elementor-size-default">
-                                                                        <Link href="/product/lqs-lidocaine">100 per pack</Link>
+                                                                        <Link href="product/lqs-lidocaine">100 per pack</Link>
                                                                     </h6>
                                                                 </div>
                                                             </div>
