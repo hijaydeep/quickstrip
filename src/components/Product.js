@@ -48,7 +48,7 @@ const Product = () => {
                                                             <div className="elementor-element elementor-element-3802ed9 elementor-align-center elementor-widget elementor-widget-button" data-id="3802ed9" data-element_type="widget" data-widget_type="button.default">
                                                                 <div className="elementor-widget-container">
                                                                     <div className="elementor-button-wrapper">
-                                                                        <Link href="/product/xylistrip" className="elementor-button elementor-button-link elementor-size-sm">
+                                                                        <Link href="product/xylistrip" className="elementor-button elementor-button-link elementor-size-sm">
                                                                             <span className="elementor-button-content-wrapper">
                                                                                 <span className="elementor-button-text">Browse</span>
                                                                             </span>
@@ -89,7 +89,7 @@ const Product = () => {
                                                             <div className="elementor-element elementor-element-d4c59d6 elementor-align-center elementor-widget elementor-widget-button" data-id="d4c59d6" data-element_type="widget" data-widget_type="button.default">
                                                                 <div className="elementor-widget-container">
                                                                     <div className="elementor-button-wrapper">
-                                                                        <Link href="/product/lqs-lidocaine" className="elementor-button elementor-button-link elementor-size-sm">
+                                                                        <Link href="product/lqs-lidocaine" className="elementor-button elementor-button-link elementor-size-sm">
                                                                             <span className="elementor-button-content-wrapper">
                                                                                 <span className="elementor-button-text">Browse</span>
                                                                             </span>

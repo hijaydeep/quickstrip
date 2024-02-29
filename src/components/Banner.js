@@ -81,7 +81,7 @@ const Banner = () => {
                                             <div className="elementor-element elementor-element-27e7e71 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-aux_modern_button" data-id="27e7e71" data-element_type="widget" data-widget_type="aux_modern_button.default">
                                                 <div className="elementor-widget-container">
                                                     <div className="aux-modern-button-wrapper aux-modern-button-align-center">
-                                                        <Link href="/our-products" className="aux-modern-button aux-white aux-modern-button-md aux-modern-button-curve aux-modern-button-default aux-icon-">
+                                                        <Link href="our-products" className="aux-modern-button aux-white aux-modern-button-md aux-modern-button-curve aux-modern-button-default aux-icon-">
                                                             <div className="aux-overlay" />
                                                             <div className="aux-text">
                                                                 <span className="aux-text-before">View Products</span>
@@ -93,7 +93,7 @@ const Banner = () => {
                                             <div className="elementor-element elementor-element-3d6f0ec elementor-widget__width-initial elementor-widget elementor-widget-aux_modern_button" data-id="3d6f0ec" data-element_type="widget" data-widget_type="aux_modern_button.default">
                                                 <div className="elementor-widget-container">
                                                     <div className="aux-modern-button-wrapper aux-modern-button-align-center">
-                                                        <Link href="/about-us" className="aux-modern-button aux-black aux-modern-button-md aux-modern-button-curve aux-modern-button-default aux-icon-">
+                                                        <Link href="about-us" className="aux-modern-button aux-black aux-modern-button-md aux-modern-button-curve aux-modern-button-default aux-icon-">
                                                             <div className="aux-overlay" />
                                                             <div className="aux-text">
                                                                 <span className="aux-text-before">About Us</span>

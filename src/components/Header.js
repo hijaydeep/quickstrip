@@ -100,19 +100,19 @@ const Header = () => {
                                                                         </li>
 
                                                                         <li id="menu-item-1260" className={pathname === "/our-products" ? "menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1233 current_page_item menu-item-1260 aux-menu-depth-0 aux-menu-root-2 aux-menu-item" : "menu-item menu-item-type-post_type menu-item-object-page menu-item-1260 aux-menu-depth-0 aux-menu-root-2 aux-menu-item aux-hover"}>
-                                                                            <Link href="/our-products" className="aux-item-content">
+                                                                            <Link href="our-products" className="aux-item-content">
                                                                                 <span className="aux-menu-label">Products</span>
                                                                             </Link>
                                                                         </li>
 
                                                                         <li id="menu-item-109" className={pathname === "/about-us" ? "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-85 current_page_item menu-item-109 aux-menu-depth-0 aux-menu-root-3 aux-menu-item" : "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page menu-item-109 aux-menu-depth-0 aux-menu-root-3 aux-menu-item aux-hover"}>
-                                                                            <Link href="/about-us" className="aux-item-content">
+                                                                            <Link href="about-us" className="aux-item-content">
                                                                                 <span className="aux-menu-label">About Us</span>
                                                                             </Link>
                                                                         </li>
 
                                                                         <li id="menu-item-111" className={pathname === "/contact-us" ? "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-84 current_page_item menu-item-111 aux-menu-depth-0 aux-menu-root-4 aux-menu-item" : "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page menu-item-111 aux-menu-depth-0 aux-menu-root-4 aux-menu-item aux-hover"}>
-                                                                            <Link href="/contact-us" className="aux-item-content">
+                                                                            <Link href="contact-us" className="aux-item-content">
                                                                                 <span className="aux-menu-label">Contact Us</span>
                                                                             </Link>
                                                                         </li>
@@ -133,17 +133,17 @@ const Header = () => {
                                                                             </Link>
                                                                         </li>
                                                                         <li id="menu-item-1260" className={pathname === "/our-products" ? "menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1233 current_page_item menu-item-1260 aux-menu-depth-0 aux-menu-root-2 aux-menu-item" : "menu-item menu-item-type-post_type menu-item-object-page menu-item-1260 aux-menu-depth-0 aux-menu-root-2 aux-menu-item aux-hover"}>
-                                                                            <Link href="/our-products" className="aux-item-content" onClick={handleLinkClick}>
+                                                                            <Link href="our-products" className="aux-item-content" onClick={handleLinkClick}>
                                                                                 <span className="aux-menu-label">Products</span>
                                                                             </Link>
                                                                         </li>
                                                                         <li id="menu-item-109" className={pathname === "/about-us" ? "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-85 current_page_item menu-item-109 aux-menu-depth-0 aux-menu-root-3 aux-menu-item" : "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page menu-item-109 aux-menu-depth-0 aux-menu-root-3 aux-menu-item aux-hover"}>
-                                                                            <Link href="/about-us" className="aux-item-content" onClick={handleLinkClick}>
+                                                                            <Link href="about-us" className="aux-item-content" onClick={handleLinkClick}>
                                                                                 <span className="aux-menu-label">About Us</span>
                                                                             </Link>
                                                                         </li>
                                                                         <li id="menu-item-111" className={pathname === "/contact-us" ? "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-84 current_page_item menu-item-111 aux-menu-depth-0 aux-menu-root-4 aux-menu-item" : "a1i0s0 menu-item menu-item-type-post_type menu-item-object-page menu-item-111 aux-menu-depth-0 aux-menu-root-4 aux-menu-item aux-hover"}>
-                                                                            <Link href="/contact-us" className="aux-item-content" onClick={handleLinkClick}>
+                                                                            <Link href="contact-us" className="aux-item-content" onClick={handleLinkClick}>
                                                                                 <span className="aux-menu-label">Contact Us</span>
                                                                             </Link>
                                                                         </li>

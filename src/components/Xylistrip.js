@@ -270,7 +270,7 @@ const Xylistrip = () => {
                                                     <li>Helps reduce the incidence of cavities</li>
                                                 </ul>
                                                 <p style={{ overflow: 'visible' }}>
-                                                    <Link href="#" id="btn-add-to-cart" rel="noopener">Buy Now</Link>
+                                                    <Link href="" id="btn-add-to-cart" rel="noopener">Buy Now</Link>
                                                 </p>
                                             </div>
                                             <form className="variations_form cart" action="https://quickstripdental.com/product/xylistrip/" method="post" encType="multipart/form-data" data-product_id={232}>
@@ -285,7 +285,7 @@ const Xylistrip = () => {
                                                                     <option value>Choose an option</option>
                                                                     <option value="28 per pack" defaultValue>28 per pack</option>
                                                                 </select>
-                                                                <Link className="reset_variations" href="#">Clear</Link>
+                                                                <Link className="reset_variations" href="">Clear</Link>
                                                             </td>
                                                         </tr>
                                                     </tbody>
@@ -306,7 +306,7 @@ const Xylistrip = () => {
                                             </form>
                                             <div className="product_meta">
                                                 <span className="sku_wrapper">SKU: <span className="sku">N/A</span></span>
-                                                <span className="posted_in">Category: <Link href="#" rel="tag">Dental</Link></span>
+                                                <span className="posted_in">Category: <Link href="" rel="tag">Dental</Link></span>
                                             </div>
                                         </div>
                                         <div className="woocommerce-tabs wc-tabs-wrapper">
@@ -400,10 +400,10 @@ const Xylistrip = () => {
                                             <h2>Related products</h2>
                                             <ul className="products columns-4">
                                                 <li className="product type-product post-274 status-publish first instock product_cat-dental has-post-thumbnail shipping-taxable purchasable product-type-variable has-default-attributes">
-                                                    <Link href="/product/lqs-lidocaine" className="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                    <Link href="product/lqs-lidocaine" className="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                                                         <img width="300" height="300" src="/img/lqs.png" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Lidocaine" decoding="async" sizes="(max-width: 300px) 100vw, 300px" />
                                                     </Link>
-                                                    <Link href="/product/lqs-lidocaine">
+                                                    <Link href="product/lqs-lidocaine">
                                                         <h2 className="woocommerce-loop-product__title">LQS – Lidocaine</h2>
                                                     </Link>
                                                     <span className="price">
@@ -411,7 +411,7 @@ const Xylistrip = () => {
                                                             <span className="woocommerce-Price-currencySymbol">$</span>269.00</bdi>
                                                         </span>
                                                     </span>
-                                                    <Link href="/product/lqs-lidocaine" data-quantity={1} className="button product_type_variable add_to_cart_button" data-product_id={274} data-product_sku aria-label="Select options for “LQS - Lidocaine”" aria-describedby="This product has multiple variants. The options may be chosen on the product page" rel="nofollow" data-product-type="variable" data-verify_nonce="76f6e55753">Select options</Link>
+                                                    <Link href="product/lqs-lidocaine" data-quantity={1} className="button product_type_variable add_to_cart_button" data-product_id={274} data-product_sku aria-label="Select options for “LQS - Lidocaine”" aria-describedby="This product has multiple variants. The options may be chosen on the product page" rel="nofollow" data-product-type="variable" data-verify_nonce="76f6e55753">Select options</Link>
                                                 </li>
                                             </ul>
                                         </section>

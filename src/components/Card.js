@@ -47,7 +47,7 @@ const Card = () => {
                             </div>
                             <div className="elementor-element elementor-element-ab33674 elementor-widget elementor-widget-aux_button" data-id="ab33674" data-element_type="widget" data-widget_type="aux_button.default">
                                 <div className="elementor-widget-container">
-                                    <Link href="/product/xylistrip" className="aux-button aux-medium aux-carmine-pink aux-curve aux-none aux-uppercase">
+                                    <Link href="product/xylistrip" className="aux-button aux-medium aux-carmine-pink aux-curve aux-none aux-uppercase">
                                         <span className="aux-overlay" />
                                         <span className="aux-text">Browse</span>
                                     </Link>
@@ -96,7 +96,7 @@ const Card = () => {
                             </div>
                             <div className="elementor-element elementor-element-58edb64 elementor-widget elementor-widget-aux_button" data-id="58edb64" data-element_type="widget" data-widget_type="aux_button.default">
                                 <div className="elementor-widget-container">
-                                    <Link href="/product/lqs-lidocaine" className="aux-button aux-medium aux-carmine-pink aux-curve aux-none aux-uppercase">
+                                    <Link href="product/lqs-lidocaine" className="aux-button aux-medium aux-carmine-pink aux-curve aux-none aux-uppercase">
                                         <span className="aux-overlay" />
                                         <span className="aux-text">Browse</span>
                                     </Link>
