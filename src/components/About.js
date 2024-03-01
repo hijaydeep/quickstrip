@@ -114,7 +114,7 @@ const About = () => {
                                                         </div>
                                                         <div className="elementor-element elementor-element-6160662 aux-appear-watch-animation aux-fade-in-up aux-animated elementor-widget elementor-widget-aux_button" data-id='6160662' data-element_type="widget" data-widget_type="aux_button.default">
                                                             <div className="elementor-widget-container">
-                                                                <Link href="contact-us" className="aux-button aux-medium aux-carmine-pink aux-curve aux-none aux-uppercase">
+                                                                <Link href="/contact-us" className="aux-button aux-medium aux-carmine-pink aux-curve aux-none aux-uppercase">
                                                                     <span className="aux-overlay" /><span className="aux-text">Contact Us</span>
                                                                 </Link>
                                                             </div>

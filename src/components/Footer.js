@@ -81,19 +81,19 @@ const Footer = () => {
                                                                     </Link>
                                                                 </li>
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-2e26e09 elementor-repeater-item-2e26e09">
-                                                                    <Link href="about-us" className="aux-icon-list-link">
+                                                                    <Link href="/about-us" className="aux-icon-list-link">
                                                                         <span className="aux-icon-list-text">About</span>
                                                                         <span className="aux-list-connector" />
                                                                     </Link>
                                                                 </li>
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-a7886e6 elementor-repeater-item-a7886e6">
-                                                                    <Link href="our-products" className="aux-icon-list-link">
+                                                                    <Link href="/our-products" className="aux-icon-list-link">
                                                                         <span className="aux-icon-list-text">Products</span>
                                                                         <span className="aux-list-connector" />
                                                                     </Link>
                                                                 </li>
                                                                 <li className="aux-icon-list-item aux-list-item-has-connector aux-list-item-has-icon aux-icon-list-item-2cd4694 elementor-repeater-item-2cd4694">
-                                                                    <Link href="contact-us" className="aux-icon-list-link">
+                                                                    <Link href="/contact-us" className="aux-icon-list-link">
                                                                         <span className="aux-icon-list-text">Contact</span>
                                                                         <span className="aux-list-connector" />
                                                                     </Link>

@@ -26,8 +26,14 @@ const Lqs = () => {
                 newHeight = `calc(100vw - 70px)`;
                 newWidth = `calc(100vw - 70px)`;
             } else {
-                newHeight = `calc(${baseHeight + 0.396 * (window.innerWidth - 938)}px)`;
-                newWidth = `calc(${baseWidth + 0.396 * (window.innerWidth - 938)}px)`;
+                // newHeight = `calc(${baseHeight + 0.396 * (window.innerWidth - 938)}px)`;
+                // newWidth = `calc(${baseWidth + 0.396 * (window.innerWidth - 938)}px)`;
+
+                newHeight = baseHeight + 0.396 * (window.innerWidth - 938);
+                newWidth = baseWidth + 0.396 * (window.innerWidth - 938);
+
+                newHeight = Math.min(newHeight, 640);
+                newWidth = Math.min(newWidth, 640);
             }
 
             setViewportHeight(newHeight);
@@ -209,7 +215,7 @@ const Lqs = () => {
                                                                     <option value>Choose an option</option>
                                                                     <option value="28 per pack" defaultValue>28 per pack</option>
                                                                 </select>
-                                                                <Link className="reset_variations" href="">Clear</Link>
+                                                                <Link className="reset_variations" href="#">Clear</Link>
                                                             </td>
                                                         </tr>
                                                     </tbody>
@@ -230,7 +236,7 @@ const Lqs = () => {
                                             </form>
                                             <div className="product_meta">
                                                 <span className="sku_wrapper">SKU: <span className="sku">N/A</span></span>
-                                                <span className="posted_in">Category: <Link href="" rel="tag">Dental</Link></span>
+                                                <span className="posted_in">Category: <Link href="#" rel="tag">Dental</Link></span>
                                             </div>
                                         </div>
                                         <div className="woocommerce-tabs wc-tabs-wrapper">
@@ -324,10 +330,10 @@ const Lqs = () => {
                                             <h2>Related products</h2>
                                             <ul className="products columns-4">
                                                 <li className="product type-product post-232 status-publish first instock product_cat-dental has-post-thumbnail shipping-taxable purchasable product-type-variable has-default-attributes">
-                                                    <Link href="xylistrip" className="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                    <Link href="/product/xylistrip" className="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                                                         <img width="300" height="300" src="/img/xylitol.png" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Lidocaine" decoding="async" />
                                                     </Link>
-                                                    <Link href="xylistrip">
+                                                    <Link href="/product/xylistrip">
                                                         <h2 className="woocommerce-loop-product__title">XyliStrip</h2>
                                                     </Link>
                                                     <span className="price">
@@ -335,7 +341,7 @@ const Lqs = () => {
                                                             <span className="woocommerce-Price-currencySymbol">$</span>25.00</bdi>
                                                         </span>
                                                     </span>
-                                                    <Link href="xylistrip" data-quantity={1} className="button product_type_variable add_to_cart_button" data-product_id={274} data-product_sku aria-label="Select options for “LQS - Lidocaine”" aria-describedby="This product has multiple variants. The options may be chosen on the product page" rel="nofollow" data-product-type="variable" data-verify_nonce="76f6e55753">Select options</Link>
+                                                    <Link href="/product/xylistrip" data-quantity={1} className="button product_type_variable add_to_cart_button" data-product_id={274} data-product_sku aria-label="Select options for “LQS - Lidocaine”" aria-describedby="This product has multiple variants. The options may be chosen on the product page" rel="nofollow" data-product-type="variable" data-verify_nonce="76f6e55753">Select options</Link>
                                                 </li>
                                             </ul>
                                         </section>
