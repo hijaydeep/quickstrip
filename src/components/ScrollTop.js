@@ -28,7 +28,7 @@ const ScrollTop = () => {
                     <div className="aux-hover-slide aux-arrow-nav aux-round aux-outline">
                         <span className="aux-overlay" />
                         <span className="aux-svg-arrow aux-h-small-up" />
-                        <span className="aux-hover-arrow aux-h-small-up" />
+                        <span className="aux-hover-arrow aux-svg-arrow aux-h-small-up aux-white" />
                     </div>
                 </div>
             )}

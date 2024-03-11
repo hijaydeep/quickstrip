@@ -29,7 +29,7 @@ const About = () => {
                                                         </div>
                                                         <div className="elementor-element elementor-element-4764bc2 elementor-widget elementor-widget-image" data-id="4764bc2" data-element_type="widget" data-widget_type="image.default">
                                                             <div className="elementor-widget-container">
-                                                                <img decoding="async" width="421" height="322" src="/img/skycare.png" className="attachment-full size-full wp-image-885" alt="" srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/rdt-34-1.png 421w, https://quickstripdental.com/wp-content/uploads/2022/10/rdt-34-1-200x153.png 200w" sizes="(max-width: 421px) 100vw, 421px" />
+                                                                <img decoding="async" width="421" height="322" src="/img/rdt.png" className="attachment-full size-full wp-image-885" alt="rdt logo" />
                                                             </div>
                                                         </div>
                                                         <div className="elementor-element elementor-element-6eafd32 aux-appear-watch-animation aux-fade-in-up aux-animated elementor-widget elementor-widget-aux_modern_heading" data-id="6eafd32" data-element_type="widget" data-widget_type="aux_modern_heading.default">
@@ -69,7 +69,7 @@ const About = () => {
                                                     <div className="elementor-widget-wrap elementor-element-populated">
                                                         <div className="elementor-element elementor-element-813e103 elementor-widget elementor-widget-image" data-id="813e103" data-element_type="widget" data-widget_type="image.default">
                                                             <div className="elementor-widget-container">
-                                                                <img decoding="async" width="450" height="317" src="/img/skycare.png" className="attachment-full size-full wp-image-884" alt="" srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/skycare-1.png 450w, https://quickstripdental.com/wp-content/uploads/2022/10/skycare-1-200x141.png 200w" sizes="(max-width: 450px) 100vw, 450px" />
+                                                                <img decoding="async" width="450" height="317" src="/img/skycare.png" className="attachment-full size-full wp-image-884" alt="skycare logo" />
                                                             </div>
                                                         </div>
                                                         <div className="elementor-element elementor-element-db69385 aux-appear-watch-animation aux-fade-in-up aux-animated elementor-widget elementor-widget-aux_modern_heading" data-id="db69385" data-element_type="widget" data-widget_type="aux_modern_heading.default">
@@ -115,7 +115,8 @@ const About = () => {
                                                         <div className="elementor-element elementor-element-6160662 aux-appear-watch-animation aux-fade-in-up aux-animated elementor-widget elementor-widget-aux_button" data-id='6160662' data-element_type="widget" data-widget_type="aux_button.default">
                                                             <div className="elementor-widget-container">
                                                                 <Link href="/contact-us" className="aux-button aux-medium aux-carmine-pink aux-curve aux-none aux-uppercase">
-                                                                    <span className="aux-overlay" /><span className="aux-text">Contact Us</span>
+                                                                    <span className="aux-overlay" />
+                                                                    <span className="aux-text">Contact Us</span>
                                                                 </Link>
                                                             </div>
                                                         </div>

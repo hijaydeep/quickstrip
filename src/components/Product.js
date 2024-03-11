@@ -20,7 +20,7 @@ const Product = () => {
                                                             <div className="elementor-element elementor-element-880aca1 elementor-widget elementor-widget-image" data-id="880aca1" data-element_type="widget" data-widget_type="image.default">
                                                                 <div className="elementor-widget-container">
                                                                     <Link href="/product/xylistrip">
-                                                                        <img decoding="async" width="600" height="600" src="/img/xylitol.png" className="attachment-full size-full wp-image-1336" alt="Xylistrip" srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product.webp 600w, https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product-300x300.webp 300w, https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product-150x150.webp 150w, https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product-200x200.webp 200w, https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product-100x100.webp 100w, https://quickstripdental.com/wp-content/uploads/2022/10/Quickstrip-Xylistrip-Product-90x90.webp 90w" sizes="(max-width: 600px) 100vw, 600px" />
+                                                                        <img decoding="async" width="600" height="600" src="/img/xylitol.png" className="attachment-full size-full wp-image-1336" alt="Xylistrip" />
                                                                     </Link>
                                                                 </div>
                                                             </div>
@@ -61,7 +61,7 @@ const Product = () => {
                                                             <div className="elementor-element elementor-element-9b7b41f elementor-widget elementor-widget-image" data-id="9b7b41f" data-element_type="widget" data-widget_type="image.default">
                                                                 <div className="elementor-widget-container">
                                                                     <Link href="/product/lqs-lidocaine">
-                                                                        <img decoding="async" width="600" height="600" src="/img/lqs.png" className="attachment-full size-full wp-image-1337" alt="Lidocaine" srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/Lidocaine-1.webp 600w, https://quickstripdental.com/wp-content/uploads/2022/10/Lidocaine-1-300x300.webp 300w, https://quickstripdental.com/wp-content/uploads/2022/10/Lidocaine-1-150x150.webp 150w, https://quickstripdental.com/wp-content/uploads/2022/10/Lidocaine-1-200x200.webp 200w, https://quickstripdental.com/wp-content/uploads/2022/10/Lidocaine-1-100x100.webp 100w, https://quickstripdental.com/wp-content/uploads/2022/10/Lidocaine-1-90x90.webp 90w" sizes="(max-width: 600px) 100vw, 600px" />
+                                                                        <img decoding="async" width="600" height="600" src="/img/lqs.png" className="attachment-full size-full wp-image-1337" alt="Lidocaine" />
                                                                     </Link>
                                                                 </div>
                                                             </div>
@@ -115,7 +115,7 @@ const Product = () => {
                                                             <div className="elementor-element elementor-element-de9de1d elementor-widget elementor-widget-image" data-id="de9de1d" data-element_type="widget" data-widget_type="image.default">
                                                                 <div className="elementor-widget-container">
                                                                     <Link href="https://quickstrip.life/products/quickstrip-energy" target="_blank">
-                                                                        <img decoding="async" width="800" height="685" src="/img/TM_Energy" className="attachment-full size-full wp-image-1358" alt="QuickStripTM Energy" srcSet="https://quickstripdental.com/wp-content/uploads/2022/12/QS_Energy_box.webp 800w, https://quickstripdental.com/wp-content/uploads/2022/12/QS_Energy_box-600x514.webp 600w, https://quickstripdental.com/wp-content/uploads/2022/12/QS_Energy_box-105x90.webp 105w" sizes="(max-width: 800px) 100vw, 800px" />
+                                                                        <img decoding="async" width="800" height="685" src="/img/TM_Energy.png" className="attachment-full size-full wp-image-1358" alt="QuickStripTM Energy" />
                                                                     </Link>
                                                                 </div>
                                                             </div>
@@ -131,7 +131,7 @@ const Product = () => {
                                                             <div className="elementor-element elementor-element-4f30206 elementor-widget elementor-widget-image" data-id="4f30206" data-element_type="widget" data-widget_type="image.default">
                                                                 <div className="elementor-widget-container">
                                                                     <Link href="https://quickstrip.life/products/quickstriptm-b12" target="_blank">
-                                                                        <img decoding="async" width="800" height="685" src="/img/TM_Vitamin" className="attachment-full size-full wp-image-1357" alt="" srcSet="https://quickstripdental.com/wp-content/uploads/2022/12/QS_B12_box-10.webp 800w, https://quickstripdental.com/wp-content/uploads/2022/12/QS_B12_box-10-600x514.webp 600w, https://quickstripdental.com/wp-content/uploads/2022/12/QS_B12_box-10-105x90.webp 105w" sizes="(max-width: 800px) 100vw, 800px" />
+                                                                        <img decoding="async" width="800" height="685" src="/img/TM_Vitamin.png" className="attachment-full size-full wp-image-1357" alt="TM Vitamin" />
                                                                     </Link>
                                                                 </div>
                                                             </div>
@@ -147,7 +147,7 @@ const Product = () => {
                                                             <div className="elementor-element elementor-element-ad0ed56 elementor-widget elementor-widget-image" data-id="ad0ed56" data-element_type="widget" data-widget_type="image.default">
                                                                 <div className="elementor-widget-container">
                                                                     <Link href="https://quickstrip.life/products/quickstriptm-sleep" target="_blank">
-                                                                        <img decoding="async" width="768" height="658" src="/img/TM_Sleep" className="attachment-full size-full wp-image-1107" alt="QuickStripTM Sleep" srcSet="https://quickstripdental.com/wp-content/uploads/2022/11/QS_Sleep-768x658-1.jpg 768w, https://quickstripdental.com/wp-content/uploads/2022/11/QS_Sleep-768x658-1-200x171.jpg 200w, https://quickstripdental.com/wp-content/uploads/2022/11/QS_Sleep-768x658-1-600x514.jpg 600w, https://quickstripdental.com/wp-content/uploads/2022/11/QS_Sleep-768x658-1-105x90.jpg 105w" sizes="(max-width: 768px) 100vw, 768px" />
+                                                                        <img decoding="async" width="768" height="658" src="/img/TM_Sleep.png" className="attachment-full size-full wp-image-1107" alt="QuickStripTM Sleep" />
                                                                     </Link>
                                                                 </div>
                                                             </div>

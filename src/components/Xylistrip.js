@@ -28,14 +28,8 @@ const Xylistrip = () => {
                 newHeight = `calc(100vw - 70px)`;
                 newWidth = `calc(100vw - 70px)`;
             } else {
-                // newHeight = `calc(${baseHeight + 0.396 * (window.innerWidth - 938)}px)`;
-                // newWidth = `calc(${baseWidth + 0.396 * (window.innerWidth - 938)}px)`;
-
-                newHeight = baseHeight + 0.396 * (window.innerWidth - 938);
-                newWidth = baseWidth + 0.396 * (window.innerWidth - 938);
-
-                newHeight = Math.min(newHeight, 640);
-                newWidth = Math.min(newWidth, 640);
+                newHeight = Math.min(baseHeight + 0.396 * (window.innerWidth - 938), 640);
+                newWidth = Math.min(baseWidth + 0.396 * (window.innerWidth - 938), 640);
             }
 
             setViewportHeight(newHeight);
@@ -367,7 +361,7 @@ const Xylistrip = () => {
                                             <ul className="products columns-4">
                                                 <li className="product type-product post-274 status-publish first instock product_cat-dental has-post-thumbnail shipping-taxable purchasable product-type-variable has-default-attributes">
                                                     <Link href="/product/lqs-lidocaine" className="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-                                                        <img width="300" height="300" src="/img/lqs.png" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Lidocaine" decoding="async" sizes="(max-width: 300px) 100vw, 300px" />
+                                                        <img width="300" height="300" src="/img/lqs.png" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Lidocaine" decoding="async" />
                                                     </Link>
                                                     <Link href="/product/lqs-lidocaine">
                                                         <h2 className="woocommerce-loop-product__title">LQS – Lidocaine</h2>

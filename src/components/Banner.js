@@ -52,9 +52,8 @@ const Banner = () => {
                                                     <img
                                                         decoding="async" width="1295" height="277"
                                                         src="/img/banner_logo.png"
-                                                        className="attachment-full size-full wp-image-856" alt=""
-                                                        srcSet="https://quickstripdental.com/wp-content/uploads/2022/10/MicrosoftTeams-image.png 1295w, https://quickstripdental.com/wp-content/uploads/2022/10/MicrosoftTeams-image-200x43.png 200w, https://quickstripdental.com/wp-content/uploads/2022/10/MicrosoftTeams-image-600x128.png 600w"
-                                                        sizes="(max-width: 1295px) 100vw, 1295px" />
+                                                        className="attachment-full size-full wp-image-856" alt="banner logo"
+                                                    />
                                                 </div>
                                             </div>
                                             <div className="elementor-element elementor-element-aeb8fa3 elementor-widget__width-auto elementor-widget elementor-widget-aux_modern_heading" data-id="aeb8fa3" data-element_type="widget" data-widget_type="aux_modern_heading.default">
@@ -66,7 +65,7 @@ const Banner = () => {
                                                     </section>
                                                 </div>
                                             </div>
-                                            <div className="elementor-element elementor-element-ddee3c0 elementor-hidden-phone aux-appear-watch-animation aux-fade-in-right elementor-widget elementor-widget-aux_modern_heading" data-id="ddee3c0" data-element_type="widget" data-widget_type="aux_modern_heading.default">
+                                            <div className="elementor-element elementor-element-ddee3c0 elementor-hidden-phone aux-appear-watch-animation aux-fade-in-right aux-animated elementor-widget elementor-widget-aux_modern_heading" data-id="ddee3c0" data-element_type="widget" data-widget_type="aux_modern_heading.default">
                                                 <div className="elementor-widget-container">
                                                     <section className="aux-widget-modern-heading">
                                                         <div className="aux-widget-inner">

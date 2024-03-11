@@ -26,14 +26,8 @@ const Lqs = () => {
                 newHeight = `calc(100vw - 70px)`;
                 newWidth = `calc(100vw - 70px)`;
             } else {
-                // newHeight = `calc(${baseHeight + 0.396 * (window.innerWidth - 938)}px)`;
-                // newWidth = `calc(${baseWidth + 0.396 * (window.innerWidth - 938)}px)`;
-
-                newHeight = baseHeight + 0.396 * (window.innerWidth - 938);
-                newWidth = baseWidth + 0.396 * (window.innerWidth - 938);
-
-                newHeight = Math.min(newHeight, 640);
-                newWidth = Math.min(newWidth, 640);
+                newHeight = Math.min(baseHeight + 0.396 * (window.innerWidth - 938), 640);
+                newWidth = Math.min(baseWidth + 0.396 * (window.innerWidth - 938), 640);
             }
 
             setViewportHeight(newHeight);
